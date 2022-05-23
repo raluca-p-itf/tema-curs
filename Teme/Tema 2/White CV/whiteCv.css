@@ -48,6 +48,7 @@ pre.name {
 
 #boxPicTitle {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
@@ -57,12 +58,13 @@ pre.name {
     line-height: 2;
     gap: 20px;
     color: crimson;
+    transition: font-size 1.5s;
 }
 
 
 #boxPicTitle:hover {
     font-size: 30px;
-    transition: 1.5s;
+    
 }
 
 

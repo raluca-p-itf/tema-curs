@@ -50,6 +50,139 @@
             </aside>
 
 
+        <h3> <span> Audio </span> tag:</h3>
+            <audio controls>
+                <source src="audio.mp3">
+            </audio>
+
+
+        <h3> Bold text using <span> b </span> tag:</h3>
+            <p>This is normal text - <b>and this is bold text</b>.</p>
+            <p>I use bold only for the fruits: potato, <b>orange, apple</b> eggplant, <b>banana</b>. </p>
+
+
+        <h3> Inverting writing using <span> bdo (Bi-Directional Override) </span> tag:</h3> 
+            <p> Raluca inverted is <bdo dir="rtl">Raluca</bdo></p>  
+            
+
+        <h3> Specifing a section that is quoted from another source, using <span> blockquote </span> tag:</h3> 
+            <p> Here are some quotes from Brainy Quote website: </p>
+                <blockquote cite="https://www.brainyquote.com/topics/motivational-quotes">
+                It always seems impossible until it's done. - Nelson Mandela <br>
+                When something is important enough, you do it even if the odds are not in your favor. - Elon Musk <br>
+                It does not matter how slowly you go as long as you do not stop. - Confucius <br>
+                </blockquote>
+
+
+        <h3> Clickable button, using <span> button </span> tag:</h3> 
+            <button>
+                Yellow
+            </button>
+
+
+        <h3> Table, using <span> caption </span> tag:</h3> 
+            <table>
+                <caption>Bills</caption>
+                <tr>
+                  <th>Month</th>
+                  <th>Amount</th>
+                </tr>
+                <tr>
+                  <td>March</td>
+                  <td>120 lei</td>
+                </tr>
+                <tr>
+                  <td>April</td>
+                  <td>200 lei</td>
+                </tr>
+            </table>
+
+
+        <h3> A datalist with pre-defined options using <span> datalist </span> tag:</h3> 
+            <form action="/action_page.php" method="get">
+                <label for="favColour">Choose your favourite colour from the list:</label>
+                <input list="colours" name="colour" id="colour">
+                <datalist id="colours">
+                    <option value="Red">
+                    <option value="Pink">
+                    <option value="Purple">
+                    <option value="Green">
+                    <option value="Blue">
+                    <option value="Brown">
+                    <option value="Yellow">
+                    <option value="Orange">
+                </datalist>
+                <input type="submit">
+            </form>
+
+
+        <h3> Description list using <span> dl </span> tag:</h3> 
+            <dl>
+                <dt>Coffee</dt>
+                <dd>Black hot drink</dd>
+                <dt>Milk</dt>
+                <dd>White cold drink</dd>
+            </dl>
+
+
+        <h3> A text with deleted and inserted part, using <span> del, ins </span> tags:</h3> 
+            <p>My favorite color is <del>orange</del> <ins>green</ins>!</p>
+
+
+        <h3> Specifying details that the user can open and close on demand, using <span> details </span> tag:</h3> 
+            <details>
+                <summary>Mona Lisa</summary>
+                <p>The Mona Lisa is one of the most valuable paintings in the world. It holds the Guinness World Record for <br>
+                    the highest known painting insurance valuation in history at US$100 million in 1962 (equivalent to $870 million in 2021).</p>
+            </details>
+
+
+        <h3> Marking up emphasized text in a document, using <span> em </span> tag:</h3> 
+            <p>You <em>have</em> to hurry up!</p>
+
+
+        <h3> Grouping related elements in a form, using <span> fieldset </span> tag:</h3> 
+            <form action="/action_page.php">
+                <fieldset>
+                    <legend>Identification:</legend>
+                    <label for="firstName">First name:</label>
+                    <input type="text" id="firstName" name="firstName"><br><br>
+                    <label for="lastName">Last name:</label>
+                    <input type="text" id="lastName" name="lastName"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" name="birthday"><br><br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+
+
+        <h3> HTML form with checkboxes, using <span> form </span> tag:</h3> 
+            <form action="/action_page.php" method="get">
+                <input type="checkbox" name="vehicle1" value="Bike">
+                <label for="vehicle1"> I have a bike</label><br>
+                <input type="checkbox" name="vehicle2" value="Car">
+                <label for="vehicle2"> I have a car</label><br>
+                <input type="checkbox" name="vehicle3" value="Boat" checked>
+                <label for="vehicle3"> I have a boat</label><br><br>
+                <input type="submit" value="Submit">
+            </form>
+
+
+        <h3> Defining thematic changes in the content, using <span> hr </span> tag:</h3> 
+            <p>CSS is a language that describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work, because it can control the layout of multiple web pages all at once.</p>
+            <hr>
+            <p>JavaScript is the programming language of HTML and the Web. JavaScript can change HTML content and attribute values. JavaScript can change CSS. JavaScript can hide and show HTML elements, and more.</p>
+
+
+        <h3> Italic text, using <span> i </span> tag:</h3> 
+            The title of the painting, which is known in English as <i>Mona Lisa</i>, is based on the Lisa del Giocondo Theory. 
+
+
+        <h3> Embeding another document within the current HTML document, using <span> iframe </span> tag:</h3> 
+            <iframe src="https://ro.wikipedia.org/wiki/Pagina_principal%C4%83" width="700" heigh="400" title="W3Schools">
+            </iframe>
 
 
 

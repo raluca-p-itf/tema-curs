@@ -1,19 +1,15 @@
-// Temă obligatorie și simplă
-
 let premise = 'What a nice day for ';
-
 let activity1 = 'science';
-
 let activity2 = 'running';
-
 let activity3 = 'learning';
 
-console.log(premise + activity3 + ' the ' + activity1 + ' of ' + activity2 + '.');
+function premiseAndActivities() {
+    return (premise + activity3 + ' the ' + activity1 + ' of ' + activity2 + '.');
+}
 
-console.log('========================================================');
+document.getElementById('theHeading').innerHTML = premiseAndActivities();
 
 
-// Temă obligatorie care necesită creativitate
 
 let personName = 'Jane Smith';
 let amountOfMoney = '$12.450';
@@ -23,60 +19,43 @@ let carName = ' a Toyota Yaris';
 let action = ' to buy';
 let dot = '.';
 
+let JaneHas = personName + ' has ' + amountOfMoney + moneyLocation + dot;
+let amountShort = amountOfMoney + aLot + dot;
+let JanePlans = personName + ' plans' + action + carName + dot;
+let JaneWillUse = personName + ' will use her ' + amountOfMoney + action + carName + dot;
+let amountLong = amountOfMoney + aLot + ' for' + carName + dot;
 
 
-console.log(personName + ' has ' + amountOfMoney + moneyLocation + dot);
-console.log(amountOfMoney + aLot + dot);
-console.log(personName + ' plans ' + action + carName + dot);
-console.log(personName + ' will use her ' + amountOfMoney + action + carName + dot);
-console.log(amountOfMoney + aLot + ' for' + carName + dot);
-
-console.log('========================================================');
-
-console.log(amountOfMoney + aLot + dot);
-console.log(amountOfMoney + aLot + ' for' + carName + dot);
-console.log(personName + ' plans' + action + carName + dot);
-console.log(personName + ' has ' + amountOfMoney + moneyLocation + dot);
-console.log(personName + ' will use her ' + amountOfMoney + action + carName + dot);
-
-console.log('========================================================');
-
-console.log(personName + ' plans' + action + carName + dot);
-console.log(amountOfMoney + aLot + ' for' + carName + dot);
-console.log(personName + ' will use her ' + amountOfMoney + action + carName + dot);
-console.log(personName + ' has ' + amountOfMoney + moneyLocation + dot);
-console.log(amountOfMoney + aLot + dot);
-
-console.log('========================================================');
+function paragraph1() {
+    return JaneHas + '</br>' + amountShort + '</br>' + JanePlans + '</br>' + JaneWillUse + '</br>' + amountLong;
+}
+document.getElementById('firstParagraph').innerHTML = paragraph1();
 
 
+function paragraph2() {
+    let wholeParagraph = '$12,450 is a lot of money. </br>' + 
+            '$12,450 is a lot of money for a Toyota Yaris. </br>' + 
+            'Jane Smith plans to buy a Toyota Yaris. </br>' + 
+            'Jane Smith has $12,450 in her bank account. </br>' + 
+            'Jane Smith will use her $12,450 to buy a Toyota Yaris. </br>';
+    return wholeParagraph;
+}
+document.getElementById('secondParagraph').innerHTML = paragraph2();
 
 
-let h1Element = document.getElementById('someText');
-console.log(h1Element);
-console.log(h1Element.innerHTML);
+let lastParagraph = JanePlans + '</br>' + amountLong + '</br>' + JaneWillUse + '</br>' + JaneHas + '</br>' + amountShort;
+function paragraph3() {
+    return lastParagraph
+}
+document.getElementById('thirdParagraph').innerHTML = paragraph3();
 
 
-h1Element.innerHTML = 'Some text edited by JS';
-h1Element.style.color = 'red';
+function breakLine() {
+    let longLine = '=======================================================';
+    return longLine;
+}
 
-
-let supraTitleElement = document.createElement('h4');
-supraTitleElement.innerHTML = 'this is a supra-title';
-
-
-h1Element.parentNode.insertBefore(supraTitleElement, h1Element);
-
-
-let subtema1 = document.createElement('h1');
-subtema1.innerHTML = (premise + activity3 + ' the ' + activity1 + ' of ' + activity2 + '.');
-h1Element.parentNode.insertBefore(subtema1, h1Element);
-
-
-let subtema2 = document.createElement('p');
-subtema2.innerHTML = (personName + ' plans' + action + carName + dot);
-h1Element.parentNode.insertBefore(subtema2, h1Element);
-
-
-
-
+document.getElementById('breakLine1').innerHTML = breakLine();
+document.getElementById('breakLine2').innerHTML = breakLine();
+document.getElementById('breakLine3').innerHTML = breakLine();
+document.getElementById('breakLine4').innerHTML = breakLine();

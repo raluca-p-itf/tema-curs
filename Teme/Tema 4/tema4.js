@@ -77,56 +77,25 @@ mySecondArrayFunction()
 
 
 // 4. 
-// function subArrays() {
-//     for (i = 0; i < mySecondArray.length; i++) {
-//         if (mySecondArray[i] <= 4) {
-//             if (mySecondArray[i]++ < 4) {
-//                 for (i = 0; i < 4; i++) {
-//                     mySecondArray.push(mySecondArray[i]);
-//                 }
-//             }
-//         }
-//     }
-// }
-// console.log(subArrays());
+function plusAndMinus(num) {
+    if (num <=4 ) {
+        subarray = [num, num+1, num+2];
+        return (subarray);
+    }
+
+    if (num >4 ) {
+        subarray = [num, num-1, num-2];
+        return (subarray);
+    }
+}  
+
+let arrayWithSubarrays = mySecondArray.map(plusAndMinus);
+
+console.log(arrayWithSubarrays);
 
 
-// let altArray = [1, 3, 4, 6, 8, 9];
-// let subArray = [];
+console.log('------------------------------');
 
 
-// function add1(number) {
-//     return number + 1;
-// }
-// console.log((altArray).map(add1));
-
-
-// function add1() {
-//     if (altArray[i] <=4) {
-//         subArray[i] = [[i], [i+1], [i+2]];
-//         altArray.push(subArray);
-//         console.log(altArray);
-//     } 
-// }
-
-
-// if (altArray[0] <= 4) {
-//     console.log((altArray).map(add1));
-// }
-
-
-// for (i=0; i<altArray.length; i++) {
-//     if (altArray[i] <= 4) {
-//         altArray[i] = [[i], [i+1], [i+2]];
-//         console.log(altArray[i])
-//     }
-// }
-
-
-// for (i=0; i<altArray.length; i++) {
-//     if (altArray[i] <= 4) {
-//         console.log((altArray).map(add1));
-//     }
-// }    
-// console.log(subArray);
+// 5.
 

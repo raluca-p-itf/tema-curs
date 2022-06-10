@@ -97,5 +97,18 @@ console.log(arrayWithSubarrays);
 console.log('------------------------------');
 
 
+// SAU 
+for (let i = 0; i < mySecondArray.length; i++) {
+    let currentItem = mySecondArray[i];
+    if (currentItem <= 4) {
+        mySecondArray[i] = [currentItem, currentItem + 1, currentItem + 2];
+    } else {
+        mySecondArray[i] = [currentItem, currentItem - 1, currentItem - 2];
+    }
+}
+
+console.log(mySecondArray);
+
+
 // 5.
 

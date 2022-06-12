@@ -134,3 +134,78 @@ let additionOrMultiplication = function () {
 
 additionOrMultiplication();
 
+
+// 3. Object with personal data
+
+// a.
+let person = {
+    firstName: 'Mihai',
+    lastName: 'Popescu',
+    sex: 'm',
+    writePoliteNameToConsole: function () {
+        let prefix = 'Mr. ';
+        if (person.sex !== 'm') {
+            prefix = 'Mrs. ';
+        }
+        console.log(prefix + person.firstName + ' ' + person.lastName);
+    }
+};
+
+person.writePoliteNameToConsole();
+
+// b. 
+let personalData = {
+    firstName: 'Anna',
+    lastName: 'Davies',
+    age: 16,
+    glasses: true,
+    eyePain: true,
+    headaches: true,
+    blurryVision: true,
+    personDescription: function() {
+        let morePersonalData = {
+        sex: 'female',
+        height: '160 cm',
+        weight: '62 kg',
+        hairColour: 'blonde',
+        eyeColour: 'blue'
+        };
+        console.log(morePersonalData);
+    },
+    ophthalmologicalConsultation: function() {
+        let decision1 = this.firstName + ' ' + this.lastName + ',' + ' we recommend you an ophthalmological consultation and maybe change your glasses.'
+        if (personalData.glasses === true) {
+            if (this.eyePain === true || this.headaches === true || this.blurryVision === true) {
+                if (personalData.age >= 18) {
+                    console.log(decision1);
+                }
+                else {
+                    console.log (decision1 + ' Please come at the appointment with one of your parents.')
+                }
+            }
+
+            else {
+                console.log(this.firstName + ' ' + this.lastName + ',' + ' you can still wear your glasses.')
+            }
+        }
+
+        if (personalData.glasses === false) {
+            let decision2 = this.firstName + ' ' + this.lastName + ',' + ' we recommend you an ophthalmological consultation. It is a chance for you to need glasses.'
+            if (this.eyePain === true && this.headaches === true || this.blurryVision === true) {
+                if (personalData.age >= 18) {
+                    console.log(decision2);
+                }
+                else {
+                    console.log (decision2 + ' Please come at the appointment with one of your parents.')
+                }
+            }
+
+            else {
+                console.log(this.firstName + ' ' + this.lastName + ',' + ' you do not need an ophthalmological consulation.')
+            }
+        }
+    }  
+}
+
+personalData.personDescription();
+personalData.ophthalmologicalConsultation();

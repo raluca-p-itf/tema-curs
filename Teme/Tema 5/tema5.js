@@ -44,11 +44,11 @@ let palindromeFunction = function() {
     let theStringLength = theString.length;
     for (let i=0; i<theStringLength/2; i++) {
         if (theString[i] === theString[theStringLength - 1 - i]) {
-                return alert ('It is a Palindrome');
         } else {
-                return alert ('It is NOT a Palindrome');  
+            return alert ('It is NOT a Palindrome');
         }
     }
+    return alert ('It is a Palindrome');
 }
 
 palindromeFunction();
@@ -56,11 +56,16 @@ palindromeFunction();
 
 let indexOfPalindromeFunction = function() {
     let insertIndex = prompt('Your number is: ' + theString + '.' + ' Choose an index and the value of it will be returned.');
-    if (insertIndex<=theString.length-1 && insertIndex>=0) {
+    if (
+        !isNaN(parseInt(insertIndex))
+        &&
+        insertIndex <= theString.length - 1
+        &&
+        insertIndex >= 0
+    ) {
         let palindromeIndex = theString.charAt(insertIndex);
         return alert ('The value of your index is: ' + palindromeIndex);
-    }
-    else {
+    } else {
         alert ('There is no value for this index.')
     }
 }
@@ -102,7 +107,7 @@ let factorial = function (a) {
     }
 }
 
-factorial(5); // 120
+factorial(6); // 120
 
 
 // 2. Function: addition / multiplication at one call
@@ -164,13 +169,26 @@ let personalData = {
     blurryVision: true,
     personDescription: function() {
         let morePersonalData = {
-        sex: 'female',
-        height: '160 cm',
-        weight: '62 kg',
-        hairColour: 'blonde',
-        eyeColour: 'blue'
+            sex: 'female',
+            height: '160 cm',
+            weight: 62,
+            hairColour: 'blonde',
+            eyeColour: 'blue',
+            getProfile: function() {
+                let weight = this.weight;
+                return {
+                    statement: this.sex + ' ' + this.height + ' ' + this.weight,
+                    isSkinny: function() {
+                        if (weight < 45) {
+                            return true;
+                        } else {
+                            return false;
+                        }
+                    }
+                };
+            }
         };
-        console.log(morePersonalData);
+        return morePersonalData;
     },
     ophthalmologicalConsultation: function() {
         let decision1 = this.firstName + ' ' + this.lastName + ',' + ' we recommend you an ophthalmological consultation and maybe change your glasses.'
@@ -207,7 +225,16 @@ let personalData = {
     }  
 }
 
-personalData.personDescription();
+console.log(
+    personalData.personDescription()
+);
+console.log(
+    personalData.personDescription().height
+);
+console.log(
+    personalData.personDescription().getProfile().isSkinny()
+);
+
 personalData.ophthalmologicalConsultation();
 
 

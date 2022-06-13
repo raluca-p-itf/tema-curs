@@ -36,7 +36,7 @@ let mathExercise = function() {
 mathExercise();
 
 
-// 2. Palindrome
+// 2. Palindrome + index of palindrome
 
 let theString = prompt('Enter a number to check if Palindrome')
 
@@ -54,33 +54,18 @@ let palindromeFunction = function() {
 palindromeFunction();
 
 
-// let findingNumberUsingIndex = function() {
-//     let index = prompt('Enter a index')
-//     for (let i=0; i<theString.length; i++) {
-//         let indexOfString = theString.charAt(i);
-//         if (index === indexOfString) {
-//             return alert (theString.charAt(i))
-//         } else {
-//             alert ('invalid')
-//         }
-//     }
-// }
+let indexOfPalindromeFunction = function() {
+    let insertIndex = prompt('Your number is: ' + theString + '.' + ' Choose an index and the value of it will be returned.');
+    if (insertIndex<=theString.length-1 && insertIndex>=0) {
+        let palindromeIndex = theString.charAt(insertIndex);
+        return alert ('The value of your index is: ' + palindromeIndex);
+    }
+    else {
+        alert ('There is no value for this index.')
+    }
+}
 
-// findingNumberUsingIndex();
-
-
-// function mySecondArrayFunction() {
-//     let insertedNumber = prompt('Please provide a number between 1 and 16.');
-//     for (i = 0; i < mySecondArray.length; i++) {
-//         if (insertedNumber != null) {
-//             if (insertedNumber - 1 === i) {
-//                 alert (mySecondArray[i])
-//             }      
-//         }
-//     }
-// }
-// mySecondArrayFunction()
-
+indexOfPalindromeFunction();
 
 
 // 3. Longest word from a sentence
@@ -103,10 +88,25 @@ longestWord();
 
 // Tema obligatorie ce necesita creativitate
 
-// 1. 
+// 1. The factorial of a number
+
+let factorial = function (a) {
+    if (Math.ceil(a) === a && Math.floor(a) === a && a>= 0) {
+        for (let i=a-1; i>=1; i--) {
+            a = a * i;
+        }
+        return console.log(a);
+    }
+    else {
+        console.log(-1);
+    }
+}
+
+factorial(5); // 120
 
 
-// 2.
+// 2. Function: addition / multiplication at one call
+
 let array = [2, 4, 8, 1, 9, 4, 5, 5, 8, 9, 1, 3, 2];
 
 let additionOrMultiplication = function () {
@@ -135,7 +135,7 @@ let additionOrMultiplication = function () {
 additionOrMultiplication();
 
 
-// 3. Object with personal data
+// 3. Object with personal data and function attributes
 
 // a.
 let person = {
@@ -209,3 +209,19 @@ let personalData = {
 
 personalData.personDescription();
 personalData.ophthalmologicalConsultation();
+
+
+// 4. Object with function attributes only - with chaining
+
+// let objectWithFunctions = {
+//     politeName: person.writePoliteNameToConsole(),
+//     personDescription: personalData.personDescription(),
+//     medicalConsultation: personalData.ophthalmologicalConsultation()
+// }
+
+// objectWithFunctions()
+
+// console.log(person.writePoliteNameToConsole());
+// console.log(objectWithFunctions.personDescription);
+// console.log(objectWithFunctions.medicalConsultation);
+// console.log(objectWithFunctions);

@@ -10,7 +10,7 @@
     margin: 11px 7px;
     cursor: pointer;
     font-family: Tahoma;
-    width: 17.5%;
+    width: 5cm;
     align-self: center;
     border-radius: 30px;
 }
@@ -28,7 +28,7 @@ button2 {
     margin: 6px 6px;
     cursor: pointer;
     font-family: Tahoma;
-    width: 10%;
+    width: 3.4cm;
     align-self: center;
     border-radius: 30px;
 }
@@ -46,7 +46,7 @@ button3 {
     margin: 6px 6px;
     cursor: pointer;
     font-family: Tahoma;
-    width: 10%;
+    width: 3.4cm;
     align-self: center;
     border-radius: 30px;
 }

@@ -225,30 +225,18 @@ let personalData = {
     }  
 }
 
+
+// 4. Function chaining
 console.log(
     personalData.personDescription()
 );
+
 console.log(
     personalData.personDescription().height
 );
+
 console.log(
     personalData.personDescription().getProfile().isSkinny()
 );
 
 personalData.ophthalmologicalConsultation();
-
-
-// 4. Object with function attributes only - with chaining
-
-// let objectWithFunctions = {
-//     politeName: person.writePoliteNameToConsole(),
-//     personDescription: personalData.personDescription(),
-//     medicalConsultation: personalData.ophthalmologicalConsultation()
-// }
-
-// objectWithFunctions()
-
-// console.log(person.writePoliteNameToConsole());
-// console.log(objectWithFunctions.personDescription);
-// console.log(objectWithFunctions.medicalConsultation);
-// console.log(objectWithFunctions);

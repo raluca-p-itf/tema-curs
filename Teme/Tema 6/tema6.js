@@ -12,8 +12,8 @@ firstButton.addEventListener('click', clickOnFirstButton);
 
 
 // 2. 
-let secondButton = document.createElement('button2');
-
+let secondButton = document.createElement('button');
+secondButton.classList.add('button2');
 secondButton.innerText = 'Second';
 
 document.body.appendChild(secondButton);
@@ -27,7 +27,8 @@ secondButton.addEventListener('click', clickOnSecondButton);
 
 
 // 3. 
-let startButton = document.createElement('button3');
+let startButton = document.createElement('button');
+secondButton.classList.add('button3');
 startButton.innerText = 'Start!';
 document.body.appendChild(startButton);
 
@@ -40,7 +41,7 @@ let step1 = function() {
     document.body.appendChild(step1Button);
 };
 
-startButton.addEventListener('click', step1);
+startButton.addEventListener('click', step1, {once: true});
 
 
 // creating step 2 button
@@ -51,7 +52,7 @@ let step2 = function() {
     document.body.appendChild(step2Button);
 };
 
-step1Button.addEventListener('click', step2);
+step1Button.addEventListener('click', step2, {once: true});
 
 
 // creating step 3 button
@@ -62,7 +63,7 @@ let step3 = function() {
     document.body.appendChild(step3Button);
 };
 
-step2Button.addEventListener('click', step3);
+step2Button.addEventListener('click', step3, {once: true});
 
 
 // creating step 4 button
@@ -73,7 +74,7 @@ let step4 = function() {
     document.body.appendChild(step4Button);
 };
 
-step3Button.addEventListener('click', step4);
+step3Button.addEventListener('click', step4, {once: true});
 
 
 // creating step 5 button
@@ -84,7 +85,7 @@ let step5 = function() {
     document.body.appendChild(step5Button);
 };
 
-step4Button.addEventListener('click', step5);
+step4Button.addEventListener('click', step5, {once: true});
 
 
 // event when pressing step 5 button
@@ -92,7 +93,7 @@ let endOfButtons = function() {
     alert('You have reach the end, there are no more buttons');
 };
 
-step5Button.addEventListener('click', endOfButtons);
+step5Button.addEventListener('click', endOfButtons, {once: true});
 
 
 
@@ -121,24 +122,6 @@ let coloursFunction = function() {
 
 coloursFunction();
 
-let action1 = function() {
-    let redButton = document.createElement('button');
-    // redButton.innerHTML = 'Red';
-    document.body.appendChild(redButton);
-    // redButton.addEventListener('click', action);
-    // return redButton;
-}
-
-
-let action2 = function() {
-    let orangeButton = document.createElement('button');
-    // orangeButton.innerHTML = 'Orange';
-    document.body.appendChild(orangeButton);
-    // redButton.addEventListener('click', action);
-    // return orangeButton;
-}
-
-
 let createButton = function(name, action) {
     let button = document.createElement('button');
     button.innerHTML = name;
@@ -147,8 +130,21 @@ let createButton = function(name, action) {
 };
 
 
-createButton('Red', action1());
-createButton('Orange', action2());
+
+
+
+let action2 = function() {
+    let b3 = createButton('Violet', null);
+    document.body.appendChild(b3);
+};
+let action1 = function() {
+    let b2 = createButton('Orange', action2);
+    document.body.appendChild(b2);
+};
+
+
+let b1 = createButton('Red', action1);
+document.body.appendChild(b1);
 
 
 

@@ -1,7 +1,8 @@
 // Tema obligatorie si simpla :)
 
 // 1.
-let firstButton = document.querySelector('#button1');
+let firstButton = document.querySelector('button');
+firstButton.classList.add('firstButton')
 
 let clickOnFirstButton = function() {
     alert('The first button was pressed');
@@ -13,7 +14,7 @@ firstButton.addEventListener('click', clickOnFirstButton);
 
 // 2. 
 let secondButton = document.createElement('button');
-secondButton.classList.add('button2');
+secondButton.classList.add('secondButton');
 secondButton.innerText = 'Second';
 
 document.body.appendChild(secondButton);
@@ -28,7 +29,7 @@ secondButton.addEventListener('click', clickOnSecondButton);
 
 // 3. 
 let startButton = document.createElement('button');
-secondButton.classList.add('button3');
+startButton.classList.add('startButton');
 startButton.innerText = 'Start!';
 document.body.appendChild(startButton);
 
@@ -100,28 +101,6 @@ step5Button.addEventListener('click', endOfButtons, {once: true});
 // Tema obligatorie ce necesita creativitate :)
 
 // 1.
-
-
-// let newButtonFunction = function() {
-//     let imageButton = document.createElement('button');
-//     imageButton.innerText = 'Open';
-//     document.body.appendChild(imageButton);
-//     imageButton.addEventListener('click', newButtonFunction);
-// }
-
-// newButtonFunction();
-
-
-let coloursFunction = function() {
-    let colours = document.createElement('button3');
-    colours.innerHTML = 'Colours';
-    document.body.appendChild(colours);
-    // redButton.addEventListener('click', action);
-    return colours;
-}
-
-coloursFunction();
-
 let createButton = function(name, action) {
     let button = document.createElement('button');
     button.innerHTML = name;
@@ -130,30 +109,48 @@ let createButton = function(name, action) {
 };
 
 
+let action5 = function() {
+    let b6 = createButton('Violet', null);
+    b6.classList.add('violetButton');
+    document.body.appendChild(b6);
+};
 
+
+let action4 = function() {
+    let b5 = createButton('Blue', action5);
+    b5.classList.add('blueButton');
+    document.body.appendChild(b5);
+};
+
+
+let action3 = function() {
+    let b4 = createButton('Green', action4);
+    b4.classList.add('greenButton');
+    document.body.appendChild(b4);
+};
 
 
 let action2 = function() {
-    let b3 = createButton('Violet', null);
+    let b3 = createButton('Yellow', action3);
+    b3.classList.add('yellowButton');
     document.body.appendChild(b3);
 };
+
+
 let action1 = function() {
     let b2 = createButton('Orange', action2);
+    b2.classList.add('orangeButton');
     document.body.appendChild(b2);
 };
 
 
-let b1 = createButton('Red', action1);
-document.body.appendChild(b1);
+let action0 = function() {
+    let b1 = createButton('Red', action1);
+    b1.classList.add('redButton');
+    document.body.appendChild(b1);
+};
 
 
-
-
-
-
-
-
-
-
-
-
+let coloursButton = createButton('Colours', action0);
+coloursButton.classList.add('coloursButton');
+document.body.appendChild(coloursButton);

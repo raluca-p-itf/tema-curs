@@ -107,7 +107,7 @@ let factorial = function (a) {
     }
 }
 
-factorial(6); // 120
+factorial(6);
 
 
 // 2. Function: addition / multiplication at one call

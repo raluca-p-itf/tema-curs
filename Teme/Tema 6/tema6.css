@@ -1,4 +1,4 @@
-#button1 {
+.firstButton, .secondButton {
     background-color: #BFFCC6;
     border: none;
     color: black;
@@ -16,8 +16,8 @@
 }
 
 
-.button2 {
-    background-color: #BFFCC6;
+.startButton, .coloursButton {
+    background-color: #B5B9FF;
     border: none;
     color: black;
     padding: 15px 32px;
@@ -25,28 +25,10 @@
     text-decoration: none;
     display: block;
     font-size: 16px;
-    margin: 6px 6px;
+    margin: 11px 7px;
     cursor: pointer;
     font-family: Tahoma;
-    width: 3.4cm;
-    align-self: center;
-    border-radius: 30px;
-}
-
-
-button3 {
-    background-color: #B5B9FF;
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 6px 6px;
-    cursor: pointer;
-    font-family: Tahoma;
-    width: 3.4cm;
+    width: 5cm;
     align-self: center;
     border-radius: 30px;
 }
@@ -66,4 +48,112 @@ button {
     font-family: Tahoma;
     align-self: center;
     border-radius: 30px;
+}
+
+
+.redButton {
+    background-color: rgba(255, 56, 56, 0.886);
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 6px 6px;
+    cursor: pointer;
+    font-family: Tahoma;
+    align-self: center;
+    border-radius: 30px;
+    width: 3cm;
+}
+
+
+.orangeButton {
+    background-color: orange;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 6px 6px;
+    cursor: pointer;
+    font-family: Tahoma;
+    align-self: center;
+    border-radius: 30px;
+    width: 3cm;
+}
+
+
+.yellowButton {
+    background-color: yellow;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 6px 6px;
+    cursor: pointer;
+    font-family: Tahoma;
+    align-self: center;
+    border-radius: 30px;
+    width: 3cm;
+}
+
+
+.greenButton {
+    background-color: rgba(55, 213, 55, 0.974);
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 6px 6px;
+    cursor: pointer;
+    font-family: Tahoma;
+    align-self: center;
+    border-radius: 30px;
+    width: 3cm;
+}
+
+
+.blueButton {
+    background-color: rgb(32, 132, 255);
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 6px 6px;
+    cursor: pointer;
+    font-family: Tahoma;
+    align-self: center;
+    border-radius: 30px;
+    width: 3cm;
+}
+
+
+.violetButton {
+    background-color: violet;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 6px 6px;
+    cursor: pointer;
+    font-family: Tahoma;
+    align-self: center;
+    border-radius: 30px;
+    width: 3cm;
 }

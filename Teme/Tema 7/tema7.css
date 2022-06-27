@@ -6,33 +6,24 @@
     cursor: pointer;
 }
 
-
-/* @media only screen and (max-width: 500px) {
-    .initialSquare {
-      left: 5px;
-      top: 5px;
-    }
-  }
-
-
-@media only screen and (min-width: 500px) {
-    .initialSquare {
-      left: 50px;
-      top: 50px;
-    }
-  } */
-
-
 @media only screen and (max-width: 500px) {
-    #theSquare {
+    .topLeft {
+      top: 5px;
+      left: 5px;
+    }
+    .bottomRight {
       bottom: 5px;
       right: 5px;
     }
   }
 
 
-@media only screen and (min-width: 500px) {
-    #theSquare {
+@media only screen and (min-width: 501px) {
+    .topLeft {
+      top: 50px;
+      left: 50px;
+    }
+    .bottomRight {
       bottom: 50px;
       right: 50px;
     }

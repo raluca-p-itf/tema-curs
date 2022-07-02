@@ -29,6 +29,38 @@ axios
     .then(function (response) {
         // handle success
         console.log(response);
+
+        // only the data about crew
+        // console.log(response.data);
+
+        // only data of one member of the crew
+        // console.log(response.data[0]);
+
+        // only the name of one member of the crew
+        // console.log(response.data[0].name);
+
+
+        // all names for the crew members in console
+        // for (i=0; i<response.data.length; i++) {
+        //     console.log(response.data[i].name);
+        // }
+
+
+        let bringName = function() {
+            for (i=0; i<response.data.length; i++) {
+                console.log(response.data[i].name);
+
+                let bringRow = document.querySelector('.longRow');
+                bringRow.style.color= 'orange';
+
+                let personName = document.querySelector('.name');
+                personName.innerText = response.data[0].name;
+            }
+        }
+
+        bringName();
+
+
     })
     .catch(function (error) {
         // handle error

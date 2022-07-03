@@ -1,25 +1,22 @@
 let popupCloseButton = document.querySelector('.closeButton > span');
 
 
+// hide the popup
 let popupClose = function () {
-    // hide the popup
     let tablePopup = document.querySelector('.tableWindow');
     tablePopup.style.display = 'none';
 };
 
-
 popupCloseButton.addEventListener('click', popupClose);
 
 
-let showPopup = document.querySelector('.btn');
-
-
+// show the popup
 let popupOpen = function () {
-    // show the popup
     let tablePopup = document.querySelector('.tableWindow');
     tablePopup.style.display = 'block';
 };
 
+let showPopup = document.querySelector('.btn');
 
 showPopup.addEventListener('click', popupOpen);
 
@@ -30,36 +27,27 @@ axios
         // handle success
         console.log(response);
 
-        // only the data about crew
-        // console.log(response.data);
-
-        // only data of one member of the crew
-        // console.log(response.data[0]);
-
-        // only the name of one member of the crew
-        // console.log(response.data[0].name);
-
-
-        // all names for the crew members in console
-        // for (i=0; i<response.data.length; i++) {
-        //     console.log(response.data[i].name);
-        // }
-
-
-        let bringName = function() {
+        let createRowsWithInfo = function() {
             for (i=0; i<response.data.length; i++) {
                 console.log(response.data[i].name);
 
-                let bringRow = document.querySelector('.longRow');
-                bringRow.style.color= 'orange';
+                let bodyTable = document.getElementById('tableBody');
+                let row = bodyTable.insertRow(i);
+                let cell1 = row.insertCell();
+                let cell2 = row.insertCell();
+                let cell3 = row.insertCell();
+                let cell4 = row.insertCell();
+                let cell5 = row.insertCell();
 
-                let personName = document.querySelector('.name');
-                personName.innerText = response.data[0].name;
+                cell1.innerHTML = i+1;
+                cell2.innerHTML = response.data[i].name;
+                cell3.innerHTML = response.data[i].agency;
+                cell4.innerHTML = response.data[i].status;
+                cell5.innerHTML = response.data[i].image;
             }
         }
 
-        bringName();
-
+        createRowsWithInfo();
 
     })
     .catch(function (error) {
@@ -67,6 +55,3 @@ axios
         console.log(error);
     })
 ;
-
-
-

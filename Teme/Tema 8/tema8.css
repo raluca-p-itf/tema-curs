@@ -5,11 +5,14 @@
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    width: 150px;
+    height: 70px;
 }
 
 
 html, body {
     height: 100%;
+    background-color: black;
 }
 
 
@@ -27,9 +30,21 @@ html, body {
     padding: 0px 10px 0px 10px;
     font-weight: bold;
     font-size: 20px;
+    background-color: #212529;
 }
 
 
 .closeButton > span {
     cursor: pointer;
+    color: orange;
+}
+
+
+#tableBody {
+    color: orange;
+}
+
+
+#theBody {
+    background-color: #212529;
 }

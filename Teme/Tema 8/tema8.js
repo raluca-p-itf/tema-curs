@@ -33,13 +33,20 @@ axios
 
                 let bodyTable = document.getElementById('tableBody');
                 let row = bodyTable.insertRow(i);
-                let cell1 = row.insertCell();
+
+                // cell1 won't be created with insertCell
+                // insertCell doesn't support th element (only td)
+                // creating it like this, will help us to display the text with bold
+                // also, we create and append cell1 first, and then we take care of the other cells so they will be displayed in order
+                let cell1 = document.createElement('th');
+                row.appendChild(cell1);
+                cell1.innerHTML = i+1;
+
                 let cell2 = row.insertCell();
                 let cell3 = row.insertCell();
                 let cell4 = row.insertCell();
                 let cell5 = row.insertCell();
 
-                cell1.innerHTML = i+1;
                 cell2.innerHTML = response.data[i].name;
                 cell3.innerHTML = response.data[i].agency;
                 cell4.innerHTML = response.data[i].status;

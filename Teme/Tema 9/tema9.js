@@ -9,22 +9,47 @@ let startDate = moment('2021-07-01');
 let currentDate = moment();
 
 
-// function that calculates every 6 days
+// function that calculates every 6 days USING WHILE
 let getDaysBetweenDates = function() {
 
-    let now = startDate.clone();
+    let cloningDates = startDate.clone();
 
-    while (now.isSameOrBefore(currentDate)) {
-        dates.push(now.format('ddd, MMMM D, YYYY'));
-        now.add(6, 'days');
+    while (cloningDates.isSameOrBefore(currentDate)) {
+        dates.push(cloningDates.format('ddd, MMMM D, YYYY'));
+        cloningDates.add(6, 'days');
     }
 
     return dates;
 };
 
 
-// calling the function and print the array to console
+// separate function that brings only the current date
+let addCurrentDate = function() {
+
+    dates.push(currentDate.format('ddd, MMMM D, YYYY'));
+
+}
+
+
+// function that calculates every 6 days USING IF AND FOR
+// let getDaysBetweenDates = function() {
+
+//     let now = startDate.clone();
+
+//     if (now.isSameOrBefore(currentDate)) {
+//         for (let i=0; i<100; i++) {
+//             dates.push(now.format('ddd, MMMM D, YYYY'));
+//             now.add(6, 'days');
+//         }
+//     }
+
+//     return dates;
+// };
+
+
+// calling both functions and print the arrays to console
 let datesList = getDaysBetweenDates();
+addCurrentDate();
 console.log(datesList);
 
 

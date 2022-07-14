@@ -13,13 +13,13 @@
     }
     
     .randomShoppingList {
-        font-size: 40px;
-        font-family: MV Boli;
+        font-size: 35px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         background-color: #fffbbf;
         text-align: center;
         padding: 50px 0 0 0;
         height: 7cm;
-        width: 90%;
+        width: 80%;
         margin: 1cm 1cm 1cm 0.95cm;
         border-radius: 50px;
     }

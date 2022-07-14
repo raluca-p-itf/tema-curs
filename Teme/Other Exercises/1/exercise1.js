@@ -24,4 +24,3 @@ let clickOnGenerateButton = function() {
 };
 
 generateButton.addEventListener('click', clickOnGenerateButton);
-

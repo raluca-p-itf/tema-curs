@@ -1,31 +1,106 @@
-h2 {
-    font-family: cursive;
-}
+@media only screen and (max-width: 720px) {
 
-.randomShoppingList {
-    font-size: 20px;
-    font-family: MV Boli;
-    background-color: #fffbbf;
-    width: 30%;
-    text-align: center;
-    padding: 15px 0 15px 0;
-    height: 1.7cm;
-    width: 12cm;
-}
+    body {
+        background-color: rgb(17, 17, 17);
+    }
 
-.generateListButton {
-    background-color: #B5B9FF;
-    border: none;
-    color: black;
-    padding: 12px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 16px;
-    margin: 11px 7px;
-    cursor: pointer;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 5cm;
-    align-self: center;
-    border-radius: 30px;
-}
+    h2 {
+        font-size: 45px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-image: linear-gradient(to right, #12fff7, rgb(255, 189, 244));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .randomShoppingList {
+        font-size: 40px;
+        font-family: MV Boli;
+        background-color: #fffbbf;
+        text-align: center;
+        padding: 50px 0 0 0;
+        height: 7cm;
+        width: 90%;
+        margin: 1cm 1cm 1cm 0.95cm;
+        border-radius: 50px;
+    }
+    
+    .generateListButton {
+        background-color: #B5B9FF;
+        border: none;
+        color: black;
+        padding: 12px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 30px;
+        margin: 11px 7px;
+        cursor: pointer;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 250px;
+        height: 90px;
+        align-self: center;
+        border-radius: 30px;
+        margin: auto;
+    }
+
+    .smiley {
+        background-color: rgb(255, 189, 244);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+  }
+
+
+@media only screen and (min-width: 721px) {
+    body {
+        background-color: rgb(17, 17, 17);
+    }
+
+    h2 {
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-image: linear-gradient(to right, #12fff7, rgb(255, 189, 244));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 0 0 0 30px;
+    }
+    
+    .randomShoppingList {
+        font-size: 25px;
+        font-family: MV Boli;
+        background-color: #fffbbf;
+        text-align: center;
+        padding: 50px 0 0 0;
+        height: 4cm;
+        width: 14cm;
+        margin: 1cm 1cm 1cm 0.95cm;
+        border-radius: 50px;
+    }
+    
+    .generateListButton {
+        background-color: #B5B9FF;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 18px;
+        margin: 11px 7px;
+        cursor: pointer;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 170px;
+        height: 60px;
+        border-radius: 23px;
+        position: fixed;
+        margin: 0 0 0 40px;
+    }
+
+    .smiley {
+        background-color: rgb(255, 189, 244);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+}   

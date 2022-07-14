@@ -10,14 +10,14 @@ console.log(Math.floor(3.7463463));
 let generateButton = document.querySelector('.generateListButton');
 
 let clickOnGenerateButton = function() {
-    let food = ['FISH', 'ORANGES', 'BREAD', 'MILK', 'ICECREAM', 'EGGS', 'POTATOES', 'TOMATOES'];
+    let food = ['fish', 'oranges', 'bread', 'milk', 'icecream', 'eggs', 'potatoes', 'tomatoes'];
     let quantity = [1, 2, 3, 4, 5, 6];
     
     let randomFood = food[Math.floor(Math.random() * 8)];
     
     let randomQuantity = quantity[Math.floor(Math.random() * 6)];
     
-    let randomDecision = 'Today you will have to buy ' + randomFood + '.' + '</br>' + 'The quantity will be ' + randomQuantity + '.';
+    let randomDecision = 'Today you will have to buy ' + '</br>' + randomFood + '.' + '</br>' + 'The quantity will be ' + '</br' + randomQuantity + '.';
     
     let displayShoppingList = document.querySelector('.randomShoppingList');
     displayShoppingList.innerHTML = randomDecision;

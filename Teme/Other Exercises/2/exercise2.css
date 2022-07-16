@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.introduction {
+    height: 100%;
+    width: 50%;
+    background-color: aquamarine;
+}
+
+h1 {
+    padding: 0 0 0 10px;
+}
+
+p {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    padding: 0 0 0 10px;
+}
+
+.birthstonesImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 79%;
+    border-radius: 10px 100px 10px 100px;
+}
+
+
+.personalizedBirthstone {
+    height: 100%;
+    width: 50%;
+    background-color: pink;
+}
+
+.pleaseProvide {
+    margin: 0 0 5px 0;
+}
+
+.dropdown-item {
+    cursor: pointer;
+}
+
+.dayInput, .monthInput, .yearInput {
+    overflow-y: scroll;
+    height: 300px;
+}
+
+
+
+.container {
+    display: flex;
+}

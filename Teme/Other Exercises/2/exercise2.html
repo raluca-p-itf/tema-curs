@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script defer src="exercise2.js"></script>
+        <link rel="stylesheet" href="exercise2.css">
+
+        <link rel="stylesheet" href="3rd-party/bootstrap.min.css">
+        <script defer src="3rd-party/bootstrap.min.js"></script>
+        <script src="3rd-party/moment.min.js"></script>
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <title> Exercise 2 </title>
+    </head>
+
+
+    <body>
+
+        <div class = "introduction">
+
+            <h1> Birthstones by Day of the Week </h1>
+
+            <p> 
+                When it comes to birthstones based on day of the week, </br>
+                each day has a planetary ruler in astrology, </br>
+                and each of those planets is connected to certain gemstones. </br>
+                For example, Monday is ruled by the moon ("moonday!"), </br>
+                which is often associated with moonstone. </br>
+            </p>
+
+            <div>
+                <img src="images/birthstones.jpg" alt="Birthstones" class="birthstonesImage">
+            </div>
+
+        </div>  
+        
+
+        <div class = "personalizedBirthstone">
+
+            <h1> Do you want to find yours? </h1>
+
+            <p class="pleaseProvide"> Please provide your date of birth </p>
+
+            <div class="container" style="text-align: center;">
+
+                <select class="daySelection">
+                    <option disabled hidden selected> Day </option>
+                </select>
+
+                <select class="monthSelection">
+                    <option disabled hidden selected> Month </option>
+                </select>
+
+                <select class="yearSelection">
+                    <option disabled hidden selected> Year </option>
+                </select>
+
+            </div>
+
+            <p> You were born on <span class="daySpan"></span>/ <span class="monthSpan"></span>/ <span class="yearSpan"></span>. </p> 
+
+        </div>
+
+    </body>
+
+</html>

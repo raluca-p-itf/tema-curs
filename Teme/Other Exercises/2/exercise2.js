@@ -26,40 +26,51 @@ let currentYear = (moment().format('Y'));
 inputNumbersForYears(currentYear, '.yearSelection');
 
 
-let daySelection = document.querySelector('.daySelection');
-let dayResult = document.querySelector('.daySpan');
-daySelection.addEventListener('change', () => {
-    dayResult.innerText = daySelection.options[daySelection.selectedIndex].value;
-});
+let yearSelection = document.querySelector('.yearSelection');
 
 let monthSelection = document.querySelector('.monthSelection');
-let monthResult = document.querySelector('.monthSpan');
-monthSelection.addEventListener('change', () => {
-    monthResult.innerText = monthSelection.options[monthSelection.selectedIndex].value;
-});
 
-let yearSelection = document.querySelector('.yearSelection');
-let yearResult = document.querySelector('.yearSpan');
-yearSelection.addEventListener('change', () => {
-    yearResult.innerText = yearSelection.options[yearSelection.selectedIndex].value;
-});
+let daySelection = document.querySelector('.daySelection');
+
+let confirmButton = document.querySelector('.confirmButton');
+
+let displayData = document.querySelector('.hiddenUserDate');
 
 
-daySelection.addEventListener('change', () => {
-    console.log(daySelection.options[daySelection.selectedIndex].value);
-});
+let firstFunction = function() {
+    confirmButton.addEventListener('click', () => {
 
-monthSelection.addEventListener('change', () => {
-    console.log(monthSelection.options[monthSelection.selectedIndex].value);
-});
+        displayData.innerText = 
+            [
+                (yearSelection.options[yearSelection.selectedIndex].value),
+                (monthSelection.options[monthSelection.selectedIndex].value),
+                (daySelection.options[daySelection.selectedIndex].value)
+            ]
+        ;
 
-yearSelection.addEventListener('change', () => {
-    console.log(yearSelection.options[yearSelection.selectedIndex].value);
-});
+        console.log(moment(displayData.textContent).format('LLLL'));
+
+        let weekDay = document.querySelector('.weekDay');
+        weekDay.innerHTML = moment(displayData.textContent).format('dddd');
 
 
+        let showCardFunction = function(day, dayCard) {
+            if (weekDay.innerHTML === day) {
+                let bringCard = document.querySelector(dayCard);
+                bringCard.style.display = 'block';
+            }
+        }
 
+        showCardFunction('Monday', '.mondayCard');
+        showCardFunction('Tuesday', '.tuesdayCard');
+        showCardFunction('Wednesday', '.wednesdayCard');
+        showCardFunction('Thursday', '.thursdayCard');
+        showCardFunction('Friday', '.fridayCard');
+        showCardFunction('Saturday', '.saturdayCard');
+        showCardFunction('Sunday', '.sundayCard');
 
+    });
 
-let userWeekDay = moment('2022-07-15').format('dddd'); 
-console.log(userWeekDay);
+}
+
+firstFunction();

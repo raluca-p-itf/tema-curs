@@ -1,13 +1,14 @@
 body {
     display: flex;
     flex-direction: row;
+    background-image: url('images/pageBackground.jpg');
 }
 
 
 .introduction {
     height: 100%;
     width: 50%;
-    background-color: aquamarine;
+    color: white;
 }
 
 h1 {
@@ -23,34 +24,71 @@ p {
 
 .birthstonesImage {
     display: block;
-    margin-left: auto;
+    margin-left: 20px;
     margin-right: auto;
     width: 79%;
-    border-radius: 10px 100px 10px 100px;
 }
 
 
 .personalizedBirthstone {
     height: 100%;
     width: 50%;
-    background-color: pink;
+    color: white;
 }
 
 .pleaseProvide {
     margin: 0 0 5px 0;
 }
 
-.dropdown-item {
-    cursor: pointer;
-}
-
-.dayInput, .monthInput, .yearInput {
-    overflow-y: scroll;
-    height: 300px;
-}
-
-
-
 .container {
     display: flex;
+}
+
+.yearSelection, .monthSelection, .daySelection {
+    background-color: rgba(0, 0, 0, 0.508);
+    color: white;
+    width: 90px;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    margin: 5px 10px 5px 0px;
+}
+
+.hiddenUserDate {
+    display: none;
+}
+
+.confirmButton {
+    background-color: rgba(107, 244, 85, 0.699);
+    width: 90px;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    margin: 5px 5px 5px 20px;
+    border-width: 0px;
+}
+
+div.card {
+    background-color: rgba(177, 177, 177, 0.501) !important;
+    height: 400px !important;
+    width: 350px !important;
+    display: none;
+    position: fixed;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.cardPicture {
+    width: 60% !important;
+    margin: auto;
 }

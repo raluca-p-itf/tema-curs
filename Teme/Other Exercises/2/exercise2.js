@@ -69,8 +69,16 @@ let firstFunction = function() {
         showCardFunction('Saturday', '.saturdayCard');
         showCardFunction('Sunday', '.sundayCard');
 
+        confirmButton.disabled = 'true';
+
     });
+
 
 }
 
 firstFunction();
+
+
+
+
+

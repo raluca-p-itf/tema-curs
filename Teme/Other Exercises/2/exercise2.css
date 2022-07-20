@@ -81,7 +81,7 @@ div.card {
     height: 400px !important;
     width: 350px !important;
     display: none;
-    position: fixed;
+    position: absolute;
 }
 
 .card-title {

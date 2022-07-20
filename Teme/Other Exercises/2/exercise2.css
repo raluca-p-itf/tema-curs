@@ -2,17 +2,23 @@ body {
     display: flex;
     flex-direction: row;
     background-image: url('images/pageBackground.jpg');
+    overflow: hidden;
 }
 
-
-.introduction {
+.introduction, .personalizedBirthstone {
     height: 100%;
     width: 50%;
     color: white;
+    margin: 30px;
+}
+
+.emptySpace {
+    height: 100%;
+    width: 5%;
 }
 
 h1 {
-    padding: 0 0 0 10px;
+    padding: 10px;
 }
 
 p {
@@ -22,26 +28,23 @@ p {
     padding: 0 0 0 10px;
 }
 
-.birthstonesImage {
-    display: block;
-    margin-left: 20px;
-    margin-right: auto;
-    width: 79%;
+.introductionText, .pleaseProvide {
+    margin-top: 30px;
 }
 
-
-.personalizedBirthstone {
-    height: 100%;
-    width: 50%;
-    color: white;
-}
-
-.pleaseProvide {
-    margin: 0 0 5px 0;
+.bornOn {
+    display: none;
+    margin-top: 15px;
 }
 
 .container {
     display: flex;
+}
+
+.birthstonesImage {
+    display: block;
+    margin-top: 50px;
+    width: 85%;
 }
 
 .yearSelection, .monthSelection, .daySelection {
@@ -55,7 +58,7 @@ p {
     font-size: 16px;
     letter-spacing: 1.5px;
     line-height: 1.5;
-    margin: 5px 10px 5px 0px;
+    margin: 5px 19px 5px 0px;
 }
 
 .hiddenUserDate {
@@ -72,23 +75,34 @@ p {
     font-size: 16px;
     letter-spacing: 1.5px;
     line-height: 1.5;
-    margin: 5px 5px 5px 20px;
+    margin: 5px 5px 5px 50px;
     border-width: 0px;
 }
 
 div.card {
-    background-color: rgba(177, 177, 177, 0.501) !important;
-    height: 400px !important;
-    width: 350px !important;
+    background-color: rgba(96, 96, 96, 0.245) !important;
+    height: 350px !important;
+    width: 300px !important;
     display: none;
-    position: absolute;
+    margin: 25px 0 0 110px;
+}
+
+.card-text {
+    margin-bottom: 5px;
 }
 
 .card-title {
     text-align: center;
+    margin-bottom: 20px !important;
 }
 
 .cardPicture {
-    width: 60% !important;
-    margin: auto;
+    width: 50% !important;
+    margin: 5% 25% 0 25%;
+}
+
+.refresh {
+    display: none;
+    font-size: 14px;
+    margin-top: 20px;
 }

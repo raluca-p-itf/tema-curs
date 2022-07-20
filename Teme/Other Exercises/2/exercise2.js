@@ -52,14 +52,13 @@ let firstFunction = function() {
 
         let weekDay = document.querySelector('.weekDay');
         weekDay.innerHTML = moment(displayData.textContent).format('dddd');
-
-
+        
         let showCardFunction = function(day, dayCard) {
             if (weekDay.innerHTML === day) {
                 let bringCard = document.querySelector(dayCard);
                 bringCard.style.display = 'block';
             }
-        }
+        };
 
         showCardFunction('Monday', '.mondayCard');
         showCardFunction('Tuesday', '.tuesdayCard');
@@ -69,16 +68,13 @@ let firstFunction = function() {
         showCardFunction('Saturday', '.saturdayCard');
         showCardFunction('Sunday', '.sundayCard');
 
+        let refresh = document.querySelector('.refresh');
+        refresh.style.display = 'block';
+
         confirmButton.disabled = 'true';
 
     });
 
-
 }
 
 firstFunction();
-
-
-
-
-

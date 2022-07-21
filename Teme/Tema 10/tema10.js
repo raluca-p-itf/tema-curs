@@ -32,3 +32,20 @@ axios
         console.log(error);
     })
 ;
+
+
+let showSpaceXOnMap = function() {
+
+    let spaceXMap = L.map('theSpaceXMap').setView([33.920911420962916, -118.32804123529185], 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© OpenStreetMap'
+    }).addTo(spaceXMap);
+
+    let mapMarker = L.marker([33.920911420962916, -118.32804123529185]).addTo(spaceXMap);
+    mapMarker.bindPopup("<b>SpaceX</b>").openPopup();
+
+}
+
+showSpaceXOnMap();

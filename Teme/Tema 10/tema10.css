@@ -1,0 +1,28 @@
+body {
+    background-color: #212529;
+}
+
+h1 {
+    color: orange;
+    text-align: center;
+}
+
+.allImagesSpace {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imagesOfMembers {
+    flex-direction: row;
+    max-width: 290px;
+    max-height: 290px;
+}
+
+.backgroundOfImages {
+    width: 290px;
+    height: 290px;
+    background-color: #212529;
+    margin: 30px;
+    text-align: center;
+}

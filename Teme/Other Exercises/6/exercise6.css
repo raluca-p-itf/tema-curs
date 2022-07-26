@@ -1,0 +1,75 @@
+html { 
+    background: url(background.avif) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+h1, h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.colorHolder {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin: auto;
+    vertical-align: middle;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 8px 6px -6px black;
+}
+
+p, .enterOneLetter {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.button {
+    font-size: 18px;
+    margin: 10px;
+    width: 70px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(49, 179, 35, 0.578);
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#fname {
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    margin: 10px 10px 10px 0;
+}
+
+.form {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.underscores {
+    font-size: 50px;
+    margin: 10px 0 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.warning {
+    margin: 20px
+}

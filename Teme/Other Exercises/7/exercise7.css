@@ -1,0 +1,118 @@
+html { 
+    background: url(images/background.avif) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  } 
+
+.woman {
+  width: 600px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.color1 {
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0.838);
+  border-radius: 50%;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.color2 {
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0.838);
+  border-radius: 50%;
+  position: fixed;
+  top: 22%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.color3 {
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0.838);
+  border-radius: 50%;
+  position: fixed;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.color4 {
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0.838);
+  border-radius: 50%;
+  position: fixed;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.color5 {
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0.838);
+  border-radius: 50%;
+  position: fixed;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.color6 {
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0.838);
+  border-radius: 50%;
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.color7 {
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0.838);
+  border-radius: 50%;
+  position: fixed;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+p {
+  font-size: 40px;
+  font-style: italic;
+}
+
+.chakra1 {
+  color: #972c90;
+}
+
+.chakra2 {
+  color: #57479d;
+}
+
+.chakra3 {
+  color: #276ab3;
+}
+
+.chakra4 {
+  color: #1da64a;
+}
+
+.chakra5 {
+  color: #fecc0c;
+}
+
+.chakra6 {
+  color: #f15c26;
+}
+
+.chakra7 {
+  color: #bf2231;
+}

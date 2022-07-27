@@ -31,11 +31,7 @@ let allColors = [
 ];
 
 let randomColor = allColors[Math.floor(Math.random() * allColors.length)];
-
 console.log(randomColor);
-
-// let splittedColor = randomColor.split("");
-// console.log(splittedColor);
 
 let answerArray = [];
 
@@ -51,11 +47,10 @@ showProgress.innerHTML = answerArray.join(" ");
 
 let warning = document.querySelector('.warning');
 
-
-
-let myFunction = function() {
+let chooseLetters = function() {
 
     for (let i = 0; i < randomColor.length; i++) {
+
         showProgress.innerHTML = answerArray.join(" ");
 
         let playerGuessCapitalOrSmallLetter = document.querySelector('#fname').value;
@@ -68,20 +63,11 @@ let myFunction = function() {
             warning.innerHTML = 'Please enter a single letter.'
         } 
 
-
-
-        // if (playerGuess === 'z') {
-        //     warning.innerHTML = 'z'
-        // }
-
-
-
         else {
             for (let j = 0; j < randomColor.length; j++) {
                 if (randomColor[j] === playerGuess) {
                     answerArray[j] = playerGuess;
-                    remainingLetters--;
-                    warning.innerHTML = ''
+                    warning.innerHTML = '';
                 }
             }
         }
@@ -91,17 +77,16 @@ let myFunction = function() {
     if (answerArray.join('') === randomColor) {
         warning.innerHTML = 'Congratulations, you have guessed it!';
     }
+
 }
 
 let button = document.querySelector('.button');
-button.addEventListener('click', myFunction)
+button.addEventListener('click', chooseLetters)
 
-
-
-let showColor = function(colorName, colorBackground) {
+let showColor = function(colorName, colorCode) {
     if (randomColor === colorName) {
         let colorHolder = document.querySelector('.colorHolder');
-        colorHolder.style.backgroundColor = colorBackground;
+        colorHolder.style.backgroundColor = colorCode;
     }
 }
 

@@ -10,7 +10,7 @@ h1, h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px;
+    margin: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -25,13 +25,36 @@ h1, h2 {
 	box-shadow: 0 8px 6px -6px black;
 }
 
-p, .enterOneLetter {
+.underscores {
+    font-size: 50px;
+    margin: 10px 0 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p, .yourLetter {
     font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 7px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#fname {
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    margin: 10px 10px 10px 0;
 }
 
 .button {
@@ -47,29 +70,17 @@ p, .enterOneLetter {
 
 }
 
-#fname {
-    font-size: 20px;
-    width: 30px;
-    height: 30px;
-    margin: 10px 10px 10px 0;
-}
-
-.form {
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.underscores {
-    font-size: 50px;
-    margin: 10px 0 40px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
 .warning {
-    margin: 20px
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.refreshMessage {
+    padding: 40px 0 0 0;
+    position: sticky;
+    left: auto;
+    right: auto;
+    font-size: 14px;
 }

@@ -1,3 +1,43 @@
+let transitions = function() {
+
+    $('.titleDiv').fadeOut(0).delay(500).fadeIn(3000).delay(1500).slideUp(2000);
+    $('.title').fadeOut(0).delay(1500).fadeIn(3000);
+
+    $('.lotusPose').fadeOut(0).delay(7000).fadeIn(3000);
+    
+    $('.color1').fadeOut(0).delay(9000).fadeIn(3000);
+    $('.chakra1').fadeOut(0).delay(11000).fadeIn(3000);
+    $('.meaning1').fadeOut(0).delay(13000).fadeIn(3000);
+
+    $('.color2').fadeOut(0).delay(15000).fadeIn(3000);
+    $('.chakra2').fadeOut(0).delay(17000).fadeIn(3000);
+    $('.meaning2').fadeOut(0).delay(19000).fadeIn(3000);
+
+    $('.color3').fadeOut(0).delay(21000).fadeIn(3000);
+    $('.chakra3').fadeOut(0).delay(23000).fadeIn(3000);
+    $('.meaning3').fadeOut(0).delay(25000).fadeIn(3000);
+
+    $('.color4').fadeOut(0).delay(27000).fadeIn(3000);
+    $('.chakra4').fadeOut(0).delay(29000).fadeIn(3000);
+    $('.meaning4').fadeOut(0).delay(31000).fadeIn(3000);
+
+    $('.color5').fadeOut(0).delay(33000).fadeIn(3000);
+    $('.chakra5').fadeOut(0).delay(35000).fadeIn(3000);
+    $('.meaning5').fadeOut(0).delay(37000).fadeIn(3000);
+
+    $('.color6').fadeOut(0).delay(39000).fadeIn(3000);
+    $('.chakra6').fadeOut(0).delay(41000).fadeIn(3000);
+    $('.meaning6').fadeOut(0).delay(43000).fadeIn(3000);
+
+    $('.color7').fadeOut(0).delay(45000).fadeIn(3000);
+    $('.chakra7').fadeOut(0).delay(47000).fadeIn(3000);
+    $('.meaning7').fadeOut(0).delay(49000).fadeIn(3000);
+
+}
+
+transitions();
+
+
 // jQuery exercises
 
 // changing a heading text with what is typed by the user 
@@ -53,15 +93,3 @@
 // the second one will help it have a specific opacity - it turns gray
 // >>>
 // $("h1").fadeTo(2000, 0.3);
-
-
-let fadeFunction = function(color, milliseconds) {
-    $(color).fadeOut(0).fadeIn(milliseconds);
-}
-// fadeFunction('.color1', 4000);
-// fadeFunction('.color2', 4000);
-// fadeFunction('.color3', 4000);
-// fadeFunction('.color4', 4000);
-// fadeFunction('.color5', 4000);
-// fadeFunction('.color6', 4000);
-// fadeFunction('.color7', 4000);

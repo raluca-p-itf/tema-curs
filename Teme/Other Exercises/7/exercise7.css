@@ -1,10 +1,39 @@
 html { 
-    background: url(images/background.avif) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  } 
+  background: url(images/background.avif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} 
+
+.titleDiv {
+  background-color: #3b5d60c0;
+  width:400px;
+  height:400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+
+.title {
+  font-size: 70px;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+}
 
 .lotusPose {
   background-image: url('images/woman.png');
@@ -16,6 +45,11 @@ html {
   transform: translate(-50%, -50%);
 }
 
+p {
+  font-size: 40px;
+  font-style: italic;
+}
+
 .color1 {
   width: 50px;
   background-color: rgba(0, 0, 0, 0.838);
@@ -24,71 +58,6 @@ html {
   top: 0px;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.color2 {
-  width: 50px;
-  background-color: rgba(0, 0, 0, 0.838);
-  border-radius: 50%;
-  position: absolute;
-  top: 80px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.color3 {
-  width: 50px;
-  background-color: rgba(0, 0, 0, 0.838);
-  border-radius: 50%;
-  position: absolute;
-  top: 160px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.color4 {
-  width: 50px;
-  background-color: rgba(0, 0, 0, 0.838);
-  border-radius: 50%;
-  position: absolute;
-  top: 240px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.color5 {
-  width: 50px;
-  background-color: rgba(0, 0, 0, 0.838);
-  border-radius: 50%;
-  position: absolute;
-  top: 320px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.color6 {
-  width: 50px;
-  background-color: rgba(0, 0, 0, 0.838);
-  border-radius: 50%;
-  position: absolute;
-  top: 400px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.color7 {
-  width: 50px;
-  background-color: rgba(0, 0, 0, 0.838);
-  border-radius: 50%;
-  position: absolute;
-  top: 480px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-p {
-  font-size: 40px;
-  font-style: italic;
 }
 
 .chakra1 {
@@ -104,6 +73,16 @@ p {
   position: absolute;
   top: -45px;
   left: 115%;
+  transform: translate(-50%, -50%);
+}
+
+.color2 {
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0.838);
+  border-radius: 50%;
+  position: absolute;
+  top: 80px;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -123,6 +102,16 @@ p {
   transform: translate(-50%, -50%);
 }
 
+.color3 {
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0.838);
+  border-radius: 50%;
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .chakra3 {
   color: #276ab3;
   position: absolute;
@@ -136,6 +125,16 @@ p {
   position: absolute;
   top: 115px;
   left: 115%;
+  transform: translate(-50%, -50%);
+}
+
+.color4 {
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0.838);
+  border-radius: 50%;
+  position: absolute;
+  top: 240px;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -155,6 +154,16 @@ p {
   transform: translate(-50%, -50%);
 }
 
+.color5 {
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0.838);
+  border-radius: 50%;
+  position: absolute;
+  top: 320px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .chakra5 {
   color: #fecc0c;
   position: absolute;
@@ -171,6 +180,16 @@ p {
   transform: translate(-50%, -50%);
 }
 
+.color6 {
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0.838);
+  border-radius: 50%;
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .chakra6 {
   color: #f15c26;
   position: absolute;
@@ -184,6 +203,16 @@ p {
   position: absolute;
   top: 355px;
   left: 115%;
+  transform: translate(-50%, -50%);
+}
+
+.color7 {
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0.838);
+  border-radius: 50%;
+  position: absolute;
+  top: 480px;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 

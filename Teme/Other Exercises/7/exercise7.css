@@ -6,9 +6,11 @@ html {
     background-size: cover;
   } 
 
-.woman {
-  width: 600px;
-  position: fixed;
+.lotusPose {
+  background-image: url('images/woman.png');
+  width:565px;
+  height:535px;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -18,8 +20,8 @@ html {
   width: 50px;
   background-color: rgba(0, 0, 0, 0.838);
   border-radius: 50%;
-  position: fixed;
-  top: 10%;
+  position: absolute;
+  top: 0px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -28,8 +30,8 @@ html {
   width: 50px;
   background-color: rgba(0, 0, 0, 0.838);
   border-radius: 50%;
-  position: fixed;
-  top: 22%;
+  position: absolute;
+  top: 80px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -38,8 +40,8 @@ html {
   width: 50px;
   background-color: rgba(0, 0, 0, 0.838);
   border-radius: 50%;
-  position: fixed;
-  top: 34%;
+  position: absolute;
+  top: 160px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -48,8 +50,8 @@ html {
   width: 50px;
   background-color: rgba(0, 0, 0, 0.838);
   border-radius: 50%;
-  position: fixed;
-  top: 46%;
+  position: absolute;
+  top: 240px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -58,8 +60,8 @@ html {
   width: 50px;
   background-color: rgba(0, 0, 0, 0.838);
   border-radius: 50%;
-  position: fixed;
-  top: 57%;
+  position: absolute;
+  top: 320px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -68,8 +70,8 @@ html {
   width: 50px;
   background-color: rgba(0, 0, 0, 0.838);
   border-radius: 50%;
-  position: fixed;
-  top: 70%;
+  position: absolute;
+  top: 400px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -78,8 +80,8 @@ html {
   width: 50px;
   background-color: rgba(0, 0, 0, 0.838);
   border-radius: 50%;
-  position: fixed;
-  top: 82%;
+  position: absolute;
+  top: 480px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -91,28 +93,112 @@ p {
 
 .chakra1 {
   color: #972c90;
+  position: absolute;
+  top: -45px;
+  left: -12%;
+  transform: translate(-50%, -50%);
+}
+
+.meaning1 {
+  color: #972c90;
+  position: absolute;
+  top: -45px;
+  left: 115%;
+  transform: translate(-50%, -50%);
 }
 
 .chakra2 {
   color: #57479d;
+  position: absolute;
+  top: 38px;
+  left: -12%;
+  transform: translate(-50%, -50%);
+}
+
+.meaning2 {
+  color: #57479d;
+  position: absolute;
+  top: 38px;
+  left: 115%;
+  transform: translate(-50%, -50%);
 }
 
 .chakra3 {
   color: #276ab3;
+  position: absolute;
+  top: 115px;
+  left: -12%;
+  transform: translate(-50%, -50%);
+}
+
+.meaning3 {
+  color: #276ab3;
+  position: absolute;
+  top: 115px;
+  left: 115%;
+  transform: translate(-50%, -50%);
 }
 
 .chakra4 {
   color: #1da64a;
+  position: absolute;
+  top: 196px;
+  left: -12%;
+  transform: translate(-50%, -50%);
+}
+
+.meaning4 {
+  color: #1da64a;
+  position: absolute;
+  top: 196px;
+  left: 115%;
+  transform: translate(-50%, -50%);
 }
 
 .chakra5 {
   color: #fecc0c;
+  position: absolute;
+  top: 278px;
+  left: -12%;
+  transform: translate(-50%, -50%);
+}
+
+.meaning5 {
+  color: #fecc0c;
+  position: absolute;
+  top: 278px;
+  left: 115%;
+  transform: translate(-50%, -50%);
 }
 
 .chakra6 {
   color: #f15c26;
+  position: absolute;
+  top: 355px;
+  left: -12%;
+  transform: translate(-50%, -50%);
+}
+
+.meaning6 {
+  color: #f15c26;
+  position: absolute;
+  top: 355px;
+  left: 115%;
+  transform: translate(-50%, -50%);
 }
 
 .chakra7 {
-  color: #bf2231;
+  color: #d5182b;
+  position: absolute;
+  top: 438px;
+  left: -12%;
+  transform: translate(-50%, -50%);
+}
+
+.meaning7 {
+  color: #d5182b;
+  position: absolute;
+  top: 438px;
+  left: 115%;
+  transform: translate(-50%, -50%);
 }

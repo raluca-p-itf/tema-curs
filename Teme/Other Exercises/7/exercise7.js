@@ -58,10 +58,10 @@
 let fadeFunction = function(color, milliseconds) {
     $(color).fadeOut(0).fadeIn(milliseconds);
 }
-fadeFunction('.color1', 4000);
-fadeFunction('.color2', 4000);
-fadeFunction('.color3', 4000);
-fadeFunction('.color4', 4000);
-fadeFunction('.color5', 4000);
-fadeFunction('.color6', 4000);
-fadeFunction('.color7', 4000);
+// fadeFunction('.color1', 4000);
+// fadeFunction('.color2', 4000);
+// fadeFunction('.color3', 4000);
+// fadeFunction('.color4', 4000);
+// fadeFunction('.color5', 4000);
+// fadeFunction('.color6', 4000);
+// fadeFunction('.color7', 4000);

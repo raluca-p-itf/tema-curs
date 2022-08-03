@@ -55,6 +55,6 @@ $('#map').click(function (event) {
 
     // If the click was close enough, tell them they won
     if (distance < 8) {
-        alert('Found the treasure in " + clicks + " clicks!');
+        alert('Found the treasure in ' + clicks + ' clicks!');
     }
 });

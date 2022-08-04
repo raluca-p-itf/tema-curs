@@ -19,7 +19,8 @@ axios
             L.circleMarker([launchpadsData[i].latitude, launchpadsData[i].longitude], {
                 radius: 25, 
                 color: 'yellow'
-            }).addTo(launchpadsMap);
+            }).addTo(launchpadsMap)
+            .bindPopup('Status: ' + response.data[i].status);  
         }
 
     })

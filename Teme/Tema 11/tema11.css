@@ -1,4 +1,14 @@
-#theSpaceXMap { 
+body {
+    background-color: #212529;
+}
+
+#launchpadsMap { 
     margin: 30px 100px 50px 100px;
-    height: 600px; 
+    height: 500px; 
+}
+
+h1 {
+    text-align: center;
+    color: orange;
+    margin: 50px;
 }

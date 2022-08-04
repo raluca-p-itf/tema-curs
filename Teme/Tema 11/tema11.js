@@ -1,10 +1,10 @@
-let spaceXMap = L.map('theSpaceXMap').setView([30.5, 30.5], 2);
+let launchpadsMap = L.map('launchpadsMap').setView([30.5, 30.5], 2);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
-    minZoom: 2,
+    minZoom: 0,
     attribution: '© OpenStreetMap'
-}).addTo(spaceXMap);
+}).addTo(launchpadsMap);
 
 
 axios
@@ -16,14 +16,10 @@ axios
         let launchpadsData = response.data;
         
         for (let i = 0; i < launchpadsData.length; i++) {
-            
-            let circle = L.circle([launchpadsData[i].latitude, launchpadsData[i].longitude], {
-                color: 'yellow',
-                fillColor: 'yellow',
-                fillOpacity: 0.3,
-                radius: 500000
-            }).addTo(spaceXMap);
-
+            L.circleMarker([launchpadsData[i].latitude, launchpadsData[i].longitude], {
+                radius: 25, 
+                color: 'yellow'
+            }).addTo(launchpadsMap);
         }
 
     })

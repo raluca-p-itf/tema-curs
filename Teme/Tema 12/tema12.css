@@ -4,7 +4,7 @@ h1 {
 }
 
 th {
-    color: grey;
+    color: rgb(102, 102, 102);
     height: 50px;
     font-size: 20px;
     background-color: rgba(139, 139, 139, 0.559);
@@ -19,8 +19,34 @@ td {
     background-color: rgba(203, 203, 203, 0.795);
 }
 
-.tableHolder {
+#calendar {
     margin: 0 100px 100px 100px;
 }
 
+.prevButton, .nextButton {
+    margin: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgba(203, 203, 203, 0.795);
+    border: none;
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+}
 
+.monthNameAndButtons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.monthName {
+    width: 500px;
+    height: 70px;
+    background-color: bisque;
+    margin: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px 0 0 0;
+    background-image: linear-gradient(to right, rgba(255, 0, 217, 0.432) , rgba(255, 255, 0, 0.453));}

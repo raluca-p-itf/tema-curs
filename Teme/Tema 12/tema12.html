@@ -6,7 +6,6 @@
 
         <script src="3rd-party/axios.min.js"></script>
         <script src="3rd-party/moment.min.js"></script>
-        <!-- <link rel="stylesheet" href="3rd-party/bootstrap.min.css"> -->
 
         <title> Tema 12 </title>
     </head>
@@ -14,69 +13,19 @@
 
     <body>
         
-        <h1> Launches </h1>
+        <h1> SpaceX  Launches </h1>
 
-        <div class="tableHolder">
-            <table class="table">
-                <thead>
-                    <tr class="weekDay">
-                        <th scope="col">Mon</th>
-                        <th scope="col">Tue</th>
-                        <th scope="col">Wed</th>
-                        <th scope="col">Thu</th>
-                        <th scope="col">Fri</th>
-                        <th scope="col">Sat</th>
-                        <th scope="col">Sun</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>10</td>
-                        <td>11</td>
-                        <td>12</td>
-                        <td>13</td>
-                        <td>14</td>
-                    </tr>
-                    <tr>
-                        <td>15</td>
-                        <td>16</td>
-                        <td>17</td>
-                        <td>18</td>
-                        <td>19</td>
-                        <td>20</td>
-                        <td>21</td>
-                    </tr>
-                    <tr>
-                        <td>22</td>
-                        <td>23</td>
-                        <td>24</td>
-                        <td>25</td>
-                        <td>26</td>
-                        <td>27</td>
-                        <td>28</td>
-                    </tr>
-                    <tr>
-                        <td>29</td>
-                        <td>30</td>
-                        <td>31</td>
-                    </tr>
-                </thead>
-
-                <tbody id="tableBody">
-                </tbody>
-
-            </table>
-
+        <div class="monthNameAndButtons"> 
+            <button type="button" class="prevButton">Prev</button>
+            <div class="monthName"></div>
+            <button type="button" class="nextButton">Next</button>    
         </div>
+
+        <div id="calendar"></div>
+
+        <svg height="100" width="100">
+            <circle cx="50" cy="50" r="20" fill="cyan" />
+        </svg> 
 
     </body>
 

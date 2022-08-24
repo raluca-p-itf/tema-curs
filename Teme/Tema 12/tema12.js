@@ -11,11 +11,6 @@ axios
             let allLaunchesDates = allLaunchesInfo[i].date_local;
             console.log(allLaunchesDates);
 
-
-            // smth3 = moment(smth2).format('D');
-
-            // console.log(smth3);
-
         }
 
     })
@@ -71,7 +66,7 @@ let createCalendar = function(elem, year, month) {
 let getDay = function(date) { // get day number from 0 (monday) to 6 (sunday)
 let day = date.getDay();
 if (day === 0) day = 7; // make Sunday (0) the last day
-    return day - 1;
+  return day - 1;
 }
 
 
@@ -80,3 +75,23 @@ createCalendar(calendar, 2022, 8);
 
 let monthName = document.querySelector('.monthName');
 monthName.innerHTML = 'August';
+
+
+// show July
+let showJuly = function() {
+  createCalendar(calendar, 2022, 7);
+  monthName.innerHTML = 'July';
+}
+
+let prev = document.querySelector('.prevButton');
+prev.addEventListener("click", showJuly);
+
+
+// show September
+let showSeptember = function() {
+  createCalendar(calendar, 2022, 9);
+  monthName.innerHTML = 'September';
+}
+
+let next = document.querySelector('.nextButton');
+next.addEventListener("click", showSeptember);

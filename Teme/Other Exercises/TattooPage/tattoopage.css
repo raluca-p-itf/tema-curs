@@ -1,4 +1,16 @@
+/* general */
+
+.spaceBetweenSection {
+    background-color: rgb(0, 0, 0);
+    height: 130px;
+    width: 100%;
+}
+
 /* HEADER - LOGO & MENU */
+
+.logoAndMenu {
+    margin-top: 40px;
+}
 
 .container {
     margin-top: 51.74px;
@@ -106,18 +118,199 @@ body {
     margin-top: 40px;
     box-shadow: rgba(180, 180, 180, 0.353) 3px 3px 46px;}
 
-.prevButton {
-    height: 30px;
-    width: 30px;
-    background-color: #db2121;
-}
-
-.nextButton {
-    height: 30px;
-    width: 30px;
-    background-color: #3721db;
+.prevButton, .nextButton{
+    height: 35px;
+    width: 35px;
 }
 
 .info {
     margin: auto auto;
+}
+
+
+/* SECTION 2 - About page */
+
+.container {
+    margin-top: 0px;
+}
+
+.aboutTitle {
+    font-family: 'Raleway';
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: 0.21em;
+    margin-bottom: 60px;
+}
+
+.aboutTwoParagraphs {
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    letter-spacing: 0.21em;
+}
+
+.aboutImageOne > img {
+    height: 332px;
+    width: 510px;
+}
+
+.aboutImageTwo {
+    background-image: url("images/aboutTattooTwo.jpg");
+    height: 400px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.aboutAndImage {
+    margin-bottom: 60px;
+}
+
+
+/* SECTION 3 - Artists page */
+
+.artistsTitle {
+    font-family: 'Raleway';
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: 0.21em;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.artist {
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: 0.21em;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.spirals {
+    height: 93.94px;
+    width: 20px;
+}
+
+.portofolio {
+    background-color: #eb12ff6e;
+    width: 100%;
+    height: 207px;
+}
+
+
+/* SECTION 4 - Services page */
+
+.servicesTitle {
+    font-family: 'Raleway';
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: 0.21em;
+    margin-bottom: 60px;
+}
+
+.serviceName {
+    font-family: 'Raleway';
+    font-size: 25px;
+    font-weight: 500;
+    color: #FFFFFF;
+    letter-spacing: 0.21em;
+    margin-bottom: 25px;
+
+    background-image: linear-gradient(to bottom right, #DF33EE 17.41%, #F4980D 34.84%, rgba(6, 232, 55, 0.961246) 65.16%, rgba(6, 244, 217, 0.961246), rgb(6, 244, 216) 81.83%);    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.serviceDescription {
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    letter-spacing: 0.21em;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    margin-right: 32px;
+}
+
+.tattooing, .tattooingDesign, .coverUp {
+    margin-bottom: 90px;
+}
+
+
+/* SECTION 5 - Contact page */
+
+.contactTitle {
+font-family: 'Raleway';
+font-size: 30px;
+font-weight: 700;
+color: #FFFFFF;
+letter-spacing: 0.21em;
+margin-bottom: 24px;
+text-align: center;
+}
+
+.contactDescription {
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    letter-spacing: 0.21em;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.placeholder {
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.21em;
+    margin-bottom: 24px;
+    height: 43px;
+    width: 376px;
+    border: 0px;
+    background: #656565;
+    border-radius: 45px;
+    padding: 23px;
+}
+
+.placeholdersAndButton > a {
+    width: 375px;
+    height: 43px;
+    background: #FFFFFF;
+    border-radius: 100px;
+    display: inline-block;
+    padding-top: 8px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.sendRequest {
+    font-family: 'Raleway';
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.21em;
+    background-image: linear-gradient(to bottom right, #DF33EE 17.41%, #F4980D 34.84%, rgba(6, 232, 55, 0.961246) 65.16%, rgba(6, 244, 217, 0.961246) 81.83%);    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    height: 346px;
+    background-color: #65656557;
 }

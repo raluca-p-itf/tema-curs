@@ -1,15 +1,25 @@
-.margin-row-y {
-    margin: 65px 0 65px 0;
+.padding-row-y {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.padding-row-y:first-of-type{
+    padding-top: 0px;
+    }
+
+.padding-row-y:last-of-type{
+    padding-bottom: 0px;
+    }
+
+.allSections {
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 /* HEADER - LOGO & MENU */
 
 .logoAndMenu {
     margin-top: 40px;
-}
-
-.container {
-    margin-top: 51.74px;
 }
 
 ul > li {
@@ -68,6 +78,7 @@ body {
     font-family: 'Raleway';
     color: white;
     margin-bottom: 40px;
+    padding-right: 100px;
 }
 
 .tattooShopName{
@@ -126,8 +137,8 @@ body {
 
 /* SECTION 2 - About page */
 
-.container {
-    margin-top: 0px;
+.aboutDescription {
+    padding-right: 100px;
 }
 
 .aboutTitle {
@@ -139,7 +150,7 @@ body {
     margin-bottom: 60px;
 }
 
-.aboutTwoParagraphs {
+.aboutFirstParagraph, .aboutSecondParagraph, .aboutThirdParagraph {
     font-family: 'Raleway';
     font-size: 16px;
     font-weight: 400;
@@ -147,12 +158,16 @@ body {
     letter-spacing: 0.21em;
 }
 
-.aboutImageOne > img {
+.aboutSecondParagraph {
+    padding-top: 25px;
+}
+
+.sketchImage {
     height: 332px;
     width: 510px;
 }
 
-.aboutImageTwo {
+.tattooShopImage {
     background-image: url("images/aboutTattooTwo.jpg");
     height: 400px;
     width: 100%;
@@ -160,10 +175,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-}
-
-.aboutAndImage {
-    margin-bottom: 60px;
+    margin-top: 60px;
 }
 
 

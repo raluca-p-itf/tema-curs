@@ -199,22 +199,44 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 55px;
 }
 
 .artistPicture {
     height: 119px;
     width: 119px;
-    background-color: #de33ee9f;
+    background-color: black;
     border-radius: 100%;
     border-style: solid;
     border-width: 9px;
     border-color: black;
-}
-
-.try {
-    background-image: url('images/John.png');
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+#artist1 {
+    background-image: url('images/John.png');
+}
+
+#artist2 {
+    background-image: url('images/Jakub.png');
+}
+
+#artist3 {
+    background-image: url('images/Hanna.png');
+}
+
+#artist4 {
+    background-image: url('images/Zofia.png');
+}
+
+#artist5 {
+    background-image: url('images/Mikołaj.png');
+}
+
+#artist6 {
+    background-image: url('images/Julia.png');
 }
 
 .artist {
@@ -228,8 +250,10 @@ body {
 }
 
 .spirals {
-    height: 93.94px;
-    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 55px;
 }
 
 .portofolio {

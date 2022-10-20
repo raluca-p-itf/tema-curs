@@ -1,9 +1,5 @@
-/* general */
-
-.spaceBetweenSection {
-    background-color: rgb(0, 0, 0);
-    height: 130px;
-    width: 100%;
+.margin-row-y {
+    margin: 65px 0 65px 0;
 }
 
 /* HEADER - LOGO & MENU */
@@ -270,7 +266,7 @@ text-align: center;
     margin-bottom: 24px;
 }
 
-.placeholder {
+.inputSpace {
     font-family: 'Raleway';
     font-size: 16px;
     font-weight: 400;
@@ -282,6 +278,11 @@ text-align: center;
     background: #656565;
     border-radius: 45px;
     padding: 23px;
+    color: red;
+}
+
+.inputSpace::placeholder {
+    color: white;
 }
 
 .placeholdersAndButton > a {

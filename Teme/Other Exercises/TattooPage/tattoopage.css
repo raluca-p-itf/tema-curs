@@ -191,6 +191,32 @@ body {
     text-align: center;
 }
 
+.artistPictureHolder {
+    height: 122px;
+    width: 122px;
+    border-radius: 100%;
+    background-image: linear-gradient(to bottom right, #DF33EE 17.41%, #F4980D 34.84%, rgba(6, 232, 55, 0.961246) 65.16%, rgba(6, 244, 217, 0.961246) 81.83%);    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.artistPicture {
+    height: 119px;
+    width: 119px;
+    background-color: #de33ee9f;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 9px;
+    border-color: black;
+}
+
+.try {
+    background-image: url('images/John.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .artist {
     font-family: 'Raleway';
     font-size: 16px;

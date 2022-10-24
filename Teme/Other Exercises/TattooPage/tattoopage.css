@@ -22,7 +22,7 @@
     margin-top: 40px;
 }
 
-ul > li {
+.menu > ul > li {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -34,11 +34,11 @@ ul > li {
     letter-spacing: .2rem;
 }
 
-ul li {
+.menu > ul li {
     position: relative;
 }
 
-ul li:after {
+.menu > ul li:after {
     content: "";
     width: 100%;
     height: 1px;
@@ -119,19 +119,22 @@ body {
     position: relative;
 }
 
-.photosCarousel > img {
-    max-width: 408px;
-    max-height: 518px;
+.tattoo1 {
+    background-image: url("images/infoTattooOne.jpg");
+    width: 100%;
+    height: 518px;
     margin-top: 40px;
-    box-shadow: rgba(180, 180, 180, 0.353) 3px 3px 46px;}
+    box-shadow: rgba(180, 180, 180, 0.353) 3px 3px 46px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 
 .prevButton, .nextButton{
     height: 35px;
     width: 35px;
-}
-
-.info {
-    margin: auto auto;
 }
 
 
@@ -163,8 +166,13 @@ body {
 }
 
 .sketchImage {
-    height: 332px;
-    width: 510px;
+    background-image: url("images/aboutTattooOne.jpg");
+    height: 333px;
+    width: 510;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 .tattooShopImage {
@@ -308,14 +316,36 @@ body {
 
 /* SECTION 5 - Contact page */
 
+.sendRequestButton {
+    background: #FFFFFF;
+    border-radius: 100px;
+    display: inline-block;
+    padding-top: 8px;
+    text-align: center;
+    height: 43px;
+    width: 376px;
+}
+
+.sendRequest {
+    background: #db2121;
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.21em;
+    background-image: linear-gradient(to bottom right, #DF33EE 17.41%, #F4980D 34.84%, rgba(6, 232, 55, 0.961246) 65.16%, rgba(6, 244, 217, 0.961246) 81.83%);    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
 .contactTitle {
-font-family: 'Raleway';
-font-size: 30px;
-font-weight: 700;
-color: #FFFFFF;
-letter-spacing: 0.21em;
-margin-bottom: 24px;
-text-align: center;
+    font-family: 'Raleway';
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: 0.21em;
+    margin-bottom: 24px;
+    text-align: center;
 }
 
 .contactDescription {
@@ -358,6 +388,10 @@ text-align: center;
     margin-bottom: 120px;
 }
 
+.placeholdersAndButton {
+    margin: 0 auto;
+}
+
 .sendRequest {
     font-family: 'Raleway';
     font-size: 15px;
@@ -372,8 +406,99 @@ text-align: center;
 
 /* FOOTER */
 
-.footer {
+footer {
     width: 100%;
-    height: 346px;
-    background-color: #65656557;
+    /* height: 346px; */
+    background-color: #232323;
 }
+
+.footerDetails {
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    color: white;
+
+    padding-top: 56px;
+}
+
+.detailsList, .socialMedia {
+    list-style-type: none;
+}
+
+/* .detailsIcon {
+    padding-right: 14px;
+} */
+
+.detailsList > li {
+    margin-bottom: 40px;
+}
+
+.socialMedia > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/* .detailsList :last-of-type {
+    margin-bottom: 0px;
+} */
+
+#map { 
+    height: 233px; 
+    width: 100%;
+    margin-left: 80px;
+}
+
+.footerIcons {
+    padding-left: 40px;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.phoneIcon {
+    background-image: url("images/phone.svg");
+}
+
+.mailIcon {
+    background-image: url("images/mail.svg");
+}
+
+.homeIcon {
+    background-image: url("images/home.svg");
+}
+
+.clockIcon {
+    background-image: url("images/clock.svg");
+}
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+        background-image: linear-gradient(to bottom right, #DF33EE 17.41%, #F4980D 34.84%, rgba(6, 232, 55, 0.961246) 65.16%, rgba(6, 244, 217, 0.961246) 81.83%);    
+  
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+        background-image: linear-gradient(to bottom right, #DF33EE 17.41%, #F4980D 34.84%, rgba(6, 232, 55, 0.961246) 65.16%, rgba(6, 244, 217, 0.961246) 81.83%);    
+  }

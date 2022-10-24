@@ -19,15 +19,15 @@
         <header class="logoAndMenu">
             <div class="container text-center">
                 <div class="row justify-content-between">
-                    <div class="col-3 logo">
+                    <div class="col-1 logo">
                         <img src = "logo.png" alt="Inkphoric logo"/>
                     </div>
-                    <div class="col-6 menu d-flex align-items-center">
+                    <div class="col-5 menu d-flex align-items-center">
                         <ul class="mb-0">
-                            <li><a href="default.asp">about</a></li>
-                            <li><a href="news.asp">artists</a></li>
-                            <li><a href="contact.asp">services</a></li>
-                            <li><a href="about.asp">contact</a></li>
+                            <li><a href="#aboutPage">about</a></li>
+                            <li><a href="#artistsPage">artists</a></li>
+                            <li><a href="#servicesPage">services</a></li>
+                            <li><a href="#contactPage">contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -36,24 +36,26 @@
 
         <!-- SECTION 1 - Presentation page -->
         <div class="container allSections">
-            <div class="row padding-row-y">
+            <div class="row padding-row-y justify-content-between align-self-center align-items-center">
                 <div class="col-7 info">
                     <p class="tattooShopName">INKPHORIC</p>
                     <p class="descriptionOne">Best tattoo studio in Kraków, Poland.</p>
                     <p class="descriptionTwo">Choose your design and let’s meet for your new stunning and unique tattoo!</p>
-                    <a href="smth.asp">
+                    <a href="#contactPage">
                         <span class="bookNow">BOOK NOW</span>
                     </a>
                 </div>
-                <div class="col-5 photosCarousel">
-                    <img src = "images/infoTattooOne.jpg" alt="Tattoo 1"/>
-                    <img src="images/prevButton.svg" class="prevButton" alt="Previous" />
-                    <img src="images/nextButton.svg" class="nextButton" alt="Next" />
+                <div class="col-4 photosCarousel">
+                    <div class="tattoo1">
+                        <!-- <img src = "images/infoTattooOne.jpg" alt="Tattoo 1" class="tattoo1"/> -->
+                    </div>
+                    <img src="images/prev.svg" class="prevButton" alt="Previous" />
+                    <img src="images/next.svg" class="nextButton" alt="Next" />
                 </div>
             </div>
 
         <!-- SECTION 2 - About page -->
-            <div class="row padding-row-y justify-content-between">
+            <div id="aboutPage" class="row padding-row-y justify-content-between">
                 <div class="col-7 aboutDescription">
                     <div class="aboutTitle">ABOUT</div>
                     <div class="aboutFirstParagraph">
@@ -67,15 +69,16 @@
                         Remember, in tattooing, there are no rules but the ones you make for yourself!
                     </div>
                 </div>
-                <div class="col-5">
-                    <img src = "images/aboutTattooOne.jpg" alt="Tattoo sketch" class="sketchImage"/>
+                <div class="col-5 sketchImage">
+                    <!-- <img src = "images/aboutTattooOne.jpg" alt="Tattoo sketch" class="sketchImage"/> -->
                 </div>
-                <div class="row justify-content-between tattooShopImage">
+                <div class="col-12 tattooShopImage">
+                    <!-- <img src = "images/aboutTattooTwo.jpg" alt="Tattoo shop" class="tattooShopImage"/> -->
                 </div>    
             </div>
 
         <!-- SECTION 3 - Artists page -->
-            <div class="row padding-row-y">
+            <div id="artistsPage" class="row padding-row-y">
                 <div class="artistsTitle">
                     ARTISTS
                 </div>
@@ -172,7 +175,7 @@
             </div>
 
         <!-- SECTION 4 - Services page -->
-            <div class="row padding-row-y">
+            <div id="servicesPage" class="row padding-row-y">
                 <div class="servicesTitle">
                     SERVICES
                 </div>
@@ -182,7 +185,7 @@
                     </div>
                     <div class="col-5">
                         <p class="serviceName">TATTOOING</p>
-                        <p class="serviceDescription">We are working for everybody who is <br> searching for quality tattooing that will last <br> a lifetime</p>
+                        <p class="serviceDescription">We are working for everybody who is searching for quality tattooing that will last a lifetime</p>
                     </div>
                 </div>
                 <div class="row justify-content-start tattooingDesign">
@@ -191,7 +194,7 @@
                     </div>
                     <div class="col-6">
                         <p class="serviceName">TATTOO DESIGN</p>
-                        <p class="serviceDescription">We are working hard to create customized <br> designs for each individual tattoo</p>
+                        <p class="serviceDescription">We are working hard to create customized designs for each individual tattoo</p>
                     </div>
                 </div>
                 <div class="row justify-content-end coverUp">
@@ -200,7 +203,7 @@
                     </div>
                     <div class="col-5">
                         <p class="serviceName">TATTOO COVER UP</p>
-                        <p class="serviceDescription">We will correct the unsuccsessful work of <br> other masters so that the tattoo pleases you <br> every day</p>
+                        <p class="serviceDescription">We will correct the unsuccsessful work of other masters so that the tattoo pleases you every day</p>
                     </div>
                 </div>
                 <div class="row justify-content-start courses">
@@ -209,47 +212,90 @@
                     </div>
                     <div class="col-6">
                         <p class="serviceName">TATTOO COURSES FOR BEGINNERS</p>
-                        <p class="serviceDescription">We can teach you the full basic of tattooing, <br> what equipment you need, how to set up a <br> workspace, aftercare and how to take care of <br> a client and many more</p>
+                        <p class="serviceDescription">We can teach you the full basic of tattooing, what equipment you need, how to set up a workspace, aftercare and how to take care of a client and many more</p>
                     </div>
                 </div>
             </div>
 
         <!-- SECTION 5 - Contact page -->
-            <div class="row padding-row-y">
-                <div class="contactTitle">
-                    CONTACT
-                </div>
-                <p class="contactDescription">
-                    We will select a specialist for you <br> and provide a free consultation
-                </p>
-                <div class="row justify-content-center placeholdersAndButton">
-                    <div class="col-5">
-                        <input type="text" placeholder="Name" class="inputSpace">
-                        <input type="text" placeholder="Phone" class="inputSpace">
-                        <input type="text" placeholder="Email" class="inputSpace">
-                        <a href="smth.asp">
-                            <span class="sendRequest">SEND REQUEST</span>
-                        </a>
-        
+            <div id="contactPage" class="row padding-row-y">
+                <div class="col-6 text-center justify-content-center placeholdersAndButton">
+                    <div class="contactTitle">
+                        CONTACT
                     </div>
+                    <div class="contactDescription">
+                        We will select a specialist for you and provide a free consultation
+                    </div>
+                    <input type="text" placeholder="Name" class="inputSpace">
+                    <input type="text" placeholder="Phone" class="inputSpace">
+                    <input type="text" placeholder="Email" class="inputSpace">
+                    <a href="smth.asp" class="sendRequestButton">
+                        <span class="sendRequest">SEND REQUEST</span>
+                    </a>
                 </div>
             </div>
         </div>
 
         <!-- FOOTER -->
-        <footer class="container">
-            <div class="footerDetails">
-                <img src="images/phone.svg" alt="Phone" /> 
-                +48963487353 <br>
-                <img src="images/mail.svg" alt="Mail" /> 
-                inkphorictattoo@gmail.com
-                <img src="images/home.svg" alt="Home" /> 
-                Karmelicka 10, 31-133 Kraków, Polonia
-                <img src="images/clock.svg" alt="Clock" /> 
-                MON -  SAT <br>
-                9:00 AM - 7:00 PM
+        <footer>
+            <div class="container footerDetails">
+                <div class="row">
+                    <div class="col-4">
+                        <ul class="detailsList">
+                            <li class="footerIcons phoneIcon">
+                                +48963487353
+                            </li>
+                            <li class="footerIcons mailIcon">
+                                inkphorictattoo@gmail.com
+                            </li>
+                            <li class="footerIcons homeIcon">
+                                Karmelicka 10, 31-133 Kraków, Polonia
+                            </li>
+                            <li class="footerIcons clockIcon">
+                                MON -  SAT </br>
+                                9:00 AM - 7:00 PM
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <div id="map">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <ul class="socialMedia">
+                            <li class="footerIcons">
+                                Follow us
+                            </li>
+                            <li class="footerIcons">
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <img src="images/facebook.svg" alt="Facebook" /> 
+                                </a>
+                            </li>
+                            <li class="footerIcons">
+                                <a href="https://www.instagram.com" target="_blank">
+                                    <img src="images/instagram.svg" alt="Instagram" />
+                                </a>
+                            </li>
+                            <li class="footerIcons">
+                                <a href="https://twitter.com" target="_blank">
+                                    <img src="images/twitter.svg" alt="Twitter" />
+                                </a>
+                            </li>
+                            <li class="footerIcons">
+                                <a href="https://youtube.com" target="_blank">
+                                    <img src="images/youtube.svg" alt="Youtube" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
             </div>
         </footer>
+
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADC8p3efY03U0iwOsYCrhjrD979oQ-OQc&callback=initMap&v=weekly" defer></script>
 
     </body>
 

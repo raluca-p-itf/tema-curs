@@ -1,25 +1,58 @@
+/* ---------- GENERAL ---------- */
+
+body {
+    font-family: 'Raleway';
+    background-color: black;
+}
+
+/* Space between sections */
 .padding-row-y {
     padding-top: 65px;
     padding-bottom: 65px;
 }
 
-.padding-row-y:first-of-type{
+.padding-row-y:first-of-type {
     padding-top: 0px;
-    }
+}
 
-.padding-row-y:last-of-type{
+.padding-row-y:last-of-type {
     padding-bottom: 0px;
-    }
+}
 
 .allSections {
     margin-top: 50px;
     margin-bottom: 120px;
 }
 
-/* HEADER - LOGO & MENU */
+/* Personalised Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: #333; 
+    border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom right, #DF33EE 17.41%, #F4980D 34.84%, rgba(6, 232, 55, 0.961246) 65.16%, rgba(6, 244, 217, 0.961246) 81.83%);    
+    border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(to bottom right, #DF33EE 17.41%, #F4980D 34.84%, rgba(6, 232, 55, 0.961246) 65.16%, rgba(6, 244, 217, 0.961246) 81.83%);    
+}
+
+
+
+/* ----------  HEADER - LOGO & MENU ---------- */
 
 .logoAndMenu {
     margin-top: 40px;
+}
+
+.logo img {
+    max-width: 164px;
 }
 
 .menu > ul > li {
@@ -28,7 +61,6 @@
     padding: 0;
     display: inline;
     margin-left: 40px;
-    font-family: 'Raleway';
     font-size: 18px;
     font-weight: 600;
     letter-spacing: .2rem;
@@ -52,7 +84,7 @@
     background-image: linear-gradient(to bottom right, #DF33EE 17.41%, #F4980D 34.84%, rgba(6, 232, 55, 0.961246) 65.16%, rgba(6, 244, 217, 0.961246) 81.83%);    
     position: absolute;
     display: none;
-  }
+}
 
 ul li:hover:after {
     display: block;
@@ -63,20 +95,16 @@ a, a:hover, a:visited {
     color: white;
 }
 
-.container {
-    align-items: center;
-}
-
-body {
-    background-color: black;
-}
-
-.logo img {
-    max-width: 164px;
-}
 
 
-/* SECTION 1 - Presentation page */
+
+
+
+
+
+
+
+/* ----------  SECTION 1 - Presentation page  ---------- */
 
 .tattooShopName, .descriptionOne, .descriptionTwo {
     font-family: 'Raleway';
@@ -142,7 +170,8 @@ body {
 }
 
 
-/* SECTION 2 - About page */
+
+/* ----------  SECTION 2 - About page  ---------- */
 
 .aboutDescription {
     padding-right: 100px;
@@ -191,7 +220,8 @@ body {
 }
 
 
-/* SECTION 3 - Artists page */
+
+/* ----------  SECTION 3 - Artists page  ---------- */
 
 .artistsTitle {
     font-family: 'Raleway';
@@ -275,7 +305,8 @@ body {
 }
 
 
-/* SECTION 4 - Services page */
+
+/* ----------  SECTION 4 - Services page  ---------- */
 
 .servicesTitle {
     font-family: 'Raleway';
@@ -318,7 +349,8 @@ body {
 }
 
 
-/* SECTION 5 - Contact page */
+
+/* ----------  SECTION 5 - Contact page  ---------- */
 
 .sendRequestButton {
     background: #FFFFFF;
@@ -408,7 +440,8 @@ body {
 }
 
 
-/* FOOTER */
+
+/* ----------  FOOTER  ---------- */
 
 footer {
     width: 100%;
@@ -477,32 +510,3 @@ footer {
 .clockIcon {
     background-image: url("images/clock.svg");
 }
-
-
-
-
-
-
-
-
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background-color: #333; 
-    border-radius: 10px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-        background-image: linear-gradient(to bottom right, #DF33EE 17.41%, #F4980D 34.84%, rgba(6, 232, 55, 0.961246) 65.16%, rgba(6, 244, 217, 0.961246) 81.83%);    
-  
-    border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-        background-image: linear-gradient(to bottom right, #DF33EE 17.41%, #F4980D 34.84%, rgba(6, 232, 55, 0.961246) 65.16%, rgba(6, 244, 217, 0.961246) 81.83%);    
-  }

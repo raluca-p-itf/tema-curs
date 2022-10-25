@@ -45,7 +45,7 @@ body {
 
 
 
-/* ----------  HEADER - Logo & Menu ---------- */
+/* ----------  HEADER - LOGO & MENU ---------- */
 
 .logoAndMenu {
     margin-top: 40px;
@@ -441,4 +441,26 @@ footer {
 #map { 
     height: 233px; 
     width: 100%;
+}
+
+.footerIcons {
+    padding-left: 40px;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.phoneIcon {
+    background-image: url("images/phone.svg");
+}
+
+.mailIcon {
+    background-image: url("images/mail.svg");
+}
+
+.homeIcon {
+    background-image: url("images/home.svg");
+}
+
+.clockIcon {
+    background-image: url("images/clock.svg");
 }

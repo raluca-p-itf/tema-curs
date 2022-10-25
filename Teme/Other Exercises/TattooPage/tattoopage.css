@@ -45,7 +45,7 @@ body {
 
 
 
-/* ----------  HEADER - LOGO & MENU ---------- */
+/* ----------  HEADER - Logo & Menu ---------- */
 
 .logoAndMenu {
     margin-top: 40px;
@@ -97,17 +97,9 @@ a, a:hover, a:visited {
 
 
 
-
-
-
-
-
-
-
-/* ----------  SECTION 1 - Presentation page  ---------- */
+/* ----------  SECTION 1 - Presentation section  ---------- */
 
 .tattooShopName, .descriptionOne, .descriptionTwo {
-    font-family: 'Raleway';
     color: white;
     margin-bottom: 40px;
     padding-right: 100px;
@@ -140,8 +132,6 @@ a, a:hover, a:visited {
 }
 
 .bookNow {
-    background: #db2121;
-    font-family: 'Raleway';
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.21em;
@@ -163,7 +153,6 @@ a, a:hover, a:visited {
     position: relative;
 }
 
-
 .prevButton, .nextButton{
     height: 35px;
     width: 35px;
@@ -171,14 +160,13 @@ a, a:hover, a:visited {
 
 
 
-/* ----------  SECTION 2 - About page  ---------- */
+/* ----------  SECTION 2 - About section  ---------- */
 
 .aboutDescription {
     padding-right: 100px;
 }
 
 .aboutTitle {
-    font-family: 'Raleway';
     font-size: 30px;
     font-weight: 700;
     color: #FFFFFF;
@@ -221,10 +209,9 @@ a, a:hover, a:visited {
 
 
 
-/* ----------  SECTION 3 - Artists page  ---------- */
+/* ----------  SECTION 3 - Artists section  ---------- */
 
 .artistsTitle {
-    font-family: 'Raleway';
     font-size: 30px;
     font-weight: 700;
     color: #FFFFFF;
@@ -242,7 +229,7 @@ a, a:hover, a:visited {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    margin-bottom: 55px;
+    margin-bottom: 21px;
 }
 
 .artistPicture {
@@ -281,13 +268,12 @@ a, a:hover, a:visited {
     background-image: url('images/Julia.png');
 }
 
-.artist {
-    font-family: 'Raleway';
+.artistName {
     font-size: 16px;
     font-weight: 700;
     color: #FFFFFF;
     letter-spacing: 0.21em;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
     text-align: center;
 }
 
@@ -306,10 +292,9 @@ a, a:hover, a:visited {
 
 
 
-/* ----------  SECTION 4 - Services page  ---------- */
+/* ----------  SECTION 4 - Services section  ---------- */
 
 .servicesTitle {
-    font-family: 'Raleway';
     font-size: 30px;
     font-weight: 700;
     color: #FFFFFF;
@@ -318,20 +303,17 @@ a, a:hover, a:visited {
 }
 
 .serviceName {
-    font-family: 'Raleway';
     font-size: 25px;
     font-weight: 500;
     color: #FFFFFF;
     letter-spacing: 0.21em;
     margin-bottom: 25px;
-
     background-image: linear-gradient(to bottom right, #DF33EE 17.41%, #F4980D 34.84%, rgba(6, 232, 55, 0.961246) 65.16%, rgba(6, 244, 217, 0.961246), rgb(6, 244, 216) 81.83%);    
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .serviceDescription {
-    font-family: 'Raleway';
     font-size: 16px;
     font-weight: 400;
     color: #FFFFFF;
@@ -350,7 +332,43 @@ a, a:hover, a:visited {
 
 
 
-/* ----------  SECTION 5 - Contact page  ---------- */
+/* ----------  SECTION 5 - Contact section  ---------- */
+
+.contactTitle {
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: 0.21em;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.contactDescription {
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    letter-spacing: 0.21em;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.inputSpace {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.21em;
+    margin-bottom: 24px;
+    height: 43px;
+    width: 376px;
+    border: 0px;
+    background: #656565;
+    border-radius: 45px;
+    padding: 23px;
+    color: white;
+}
+
+.inputSpace::placeholder {
+    color: #C4C4C4;
+}
 
 .sendRequestButton {
     background: #FFFFFF;
@@ -363,8 +381,6 @@ a, a:hover, a:visited {
 }
 
 .sendRequest {
-    background: #db2121;
-    font-family: 'Raleway';
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.21em;
@@ -374,62 +390,11 @@ a, a:hover, a:visited {
     position: relative;
 }
 
-.contactTitle {
-    font-family: 'Raleway';
-    font-size: 30px;
-    font-weight: 700;
-    color: #FFFFFF;
-    letter-spacing: 0.21em;
-    margin-bottom: 24px;
-    text-align: center;
-}
-
-.contactDescription {
-    font-family: 'Raleway';
-    font-size: 16px;
-    font-weight: 400;
-    color: #FFFFFF;
-    letter-spacing: 0.21em;
-    text-align: center;
-    margin-bottom: 24px;
-}
-
-.inputSpace {
-    font-family: 'Raleway';
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.21em;
-    margin-bottom: 24px;
-    height: 43px;
-    width: 376px;
-    border: 0px;
-    background: #656565;
-    border-radius: 45px;
-    padding: 23px;
-    color: red;
-}
-
-.inputSpace::placeholder {
-    color: white;
-}
-
-.placeholdersAndButton > a {
-    width: 375px;
-    height: 43px;
-    background: #FFFFFF;
-    border-radius: 100px;
-    display: inline-block;
-    padding-top: 8px;
-    text-align: center;
-    margin-bottom: 120px;
-}
-
 .placeholdersAndButton {
     margin: 0 auto;
 }
 
 .sendRequest {
-    font-family: 'Raleway';
     font-size: 15px;
     font-weight: 600;
     letter-spacing: 0.21em;
@@ -445,17 +410,14 @@ a, a:hover, a:visited {
 
 footer {
     width: 100%;
-    /* height: 346px; */
     background-color: #232323;
 }
 
 .footerDetails {
-    font-family: 'Raleway';
     font-size: 16px;
     font-weight: 400;
-    letter-spacing: .2rem;
+    letter-spacing: 0.21em;
     color: white;
-
     padding-top: 56px;
 }
 
@@ -463,10 +425,6 @@ footer {
     list-style-type: none;
     padding-left: 0px;
 }
-
-/* .detailsIcon {
-    padding-right: 14px;
-} */
 
 .detailsList > li {
     margin-bottom: 40px;
@@ -480,33 +438,7 @@ footer {
     margin-bottom: 20px;
 }
 
-/* .detailsList :last-of-type {
-    margin-bottom: 0px;
-} */
-
 #map { 
     height: 233px; 
     width: 100%;
-}
-
-.footerIcons {
-    padding-left: 40px;
-    background-position: left center;
-    background-repeat: no-repeat;
-}
-
-.phoneIcon {
-    background-image: url("images/phone.svg");
-}
-
-.mailIcon {
-    background-image: url("images/mail.svg");
-}
-
-.homeIcon {
-    background-image: url("images/home.svg");
-}
-
-.clockIcon {
-    background-image: url("images/clock.svg");
 }

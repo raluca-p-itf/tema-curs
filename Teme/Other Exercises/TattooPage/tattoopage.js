@@ -20,21 +20,6 @@ window.initMap = initMap;
 
 const swiperPresentation = new Swiper('.swiperPresentation', {
     effect: 'cards',
-    perSlideOffset: {
-        number: 8
-    },
-    perSlideRotate: {
-        number: 2
-    },
-    rotate: {
-        boolean: true
-    },
-    slideShadows: {
-        boolean: true
-    },
-    transformE1: {
-        CSSSelector: null
-    },
 
     // Optional parameters
     direction: 'horizontal',

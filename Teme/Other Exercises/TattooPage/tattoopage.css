@@ -3,6 +3,7 @@
 body {
     font-family: 'Raleway';
     background-color: black;
+    overflow-x: hidden;
 }
 
 /* Space between sections */
@@ -40,6 +41,10 @@ body {
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(to bottom right, #DF33EE 17.41%, #F4980D 34.84%, rgba(6, 232, 55, 0.961246) 65.16%, rgba(6, 244, 217, 0.961246) 81.83%);    
+}
+
+.swiper-pagination-bullet-active, .swiper-scrollbar-drag {
     background-image: linear-gradient(to bottom right, #DF33EE 17.41%, #F4980D 34.84%, rgba(6, 232, 55, 0.961246) 65.16%, rgba(6, 244, 217, 0.961246) 81.83%);    
 }
 
@@ -246,14 +251,15 @@ a, a:hover, a:visited {
 }
 
 .artistPicture {
-    height: 119px;
-    width: 119px;
+    height: 118px;
+    width: 118px;
     background-color: black;
     border-radius: 100%;
     border-style: solid;
     border-width: 9px;
     border-color: black;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -301,6 +307,7 @@ a, a:hover, a:visited {
     margin-bottom: 80px;
     width: 400px;
     height: 450px;
+    border-radius: 13px;
 }
 
 .artistCards {

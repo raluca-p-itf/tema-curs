@@ -141,22 +141,35 @@ a, a:hover, a:visited {
     position: relative;
 }
 
-.tattoo1 {
-    background-image: url("images/infoTattooOne.jpg");
-    width: 100%;
+.swiperPresentation {
+    width: 408px;
     height: 518px;
-    margin-top: 40px;
-    box-shadow: rgba(180, 180, 180, 0.353) 3px 3px 46px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.presentationCards {
+    border-radius: 10px;
+    /* box-shadow: rgba(180, 180, 180, 0.353) 3px 3px 46px; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
 }
 
-.prevButton, .nextButton{
-    height: 35px;
-    width: 35px;
-}
+/* Presentation Cards Pack */
+.presentationCardsPack > .card1 { background-image: url("images/presentationCards/card1.jpg"); }
+.presentationCardsPack > .card2 { background-image: url("images/presentationCards/card2.jpg"); }
+.presentationCardsPack > .card3 { background-image: url("images/presentationCards/card3.jpg"); }
+.presentationCardsPack > .card4 { background-image: url("images/presentationCards/card4.jpg"); }
+.presentationCardsPack > .card5 { background-image: url("images/presentationCards/card5.jpg"); }
+.presentationCardsPack > .card6 { background-image: url("images/presentationCards/card6.jpg"); }
+.presentationCardsPack > .card7 { background-image: url("images/presentationCards/card7.jpg"); }
+.presentationCardsPack > .card8 { background-image: url("images/presentationCards/card8.jpg"); }
+.presentationCardsPack > .card9 { background-image: url("images/presentationCards/card9.jpg"); }
+.presentationCardsPack > .card10 { background-image: url("images/presentationCards/card10.jpg"); }
 
 
 
@@ -273,7 +286,7 @@ a, a:hover, a:visited {
     font-weight: 700;
     color: #FFFFFF;
     letter-spacing: 0.21em;
-    margin-bottom: 55px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
@@ -281,14 +294,92 @@ a, a:hover, a:visited {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 55px;
+    margin-bottom: 40px;
 }
 
-.portofolio {
-    background-color: #eb12ff6e;
-    width: 100%;
-    height: 207px;
+.artistPortofolio {
+    margin-bottom: 80px;
+    width: 400px;
+    height: 450px;
 }
+
+.artistCards {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Artist 1 Portofolio */
+.artist1CardsPack > .card1 { background-image: url("images/artist1tattoos/card1.jpg"); }
+.artist1CardsPack > .card2 { background-image: url("images/artist1tattoos/card2.jpg"); }
+.artist1CardsPack > .card3 { background-image: url("images/artist1tattoos/card3.jpg"); }
+.artist1CardsPack > .card4 { background-image: url("images/artist1tattoos/card4.jpg"); }
+.artist1CardsPack > .card5 { background-image: url("images/artist1tattoos/card5.jpg"); }
+.artist1CardsPack > .card6 { background-image: url("images/artist1tattoos/card6.jpg"); }
+.artist1CardsPack > .card7 { background-image: url("images/artist1tattoos/card7.jpg"); }
+.artist1CardsPack > .card8 { background-image: url("images/artist1tattoos/card8.jpg"); }
+.artist1CardsPack > .card9 { background-image: url("images/artist1tattoos/card9.jpg"); }
+.artist1CardsPack > .card10 { background-image: url("images/artist1tattoos/card10.jpg"); }
+
+/* Artist 2 Portofolio */
+.artist2CardsPack > .card1 { background-image: url("images/artist2tattoos/card1.jpg"); }
+.artist2CardsPack > .card2 { background-image: url("images/artist2tattoos/card2.jpg"); }
+.artist2CardsPack > .card3 { background-image: url("images/artist2tattoos/card3.jpg"); }
+.artist2CardsPack > .card4 { background-image: url("images/artist2tattoos/card4.jpg"); }
+.artist2CardsPack > .card5 { background-image: url("images/artist2tattoos/card5.jpg"); }
+.artist2CardsPack > .card6 { background-image: url("images/artist2tattoos/card6.jpg"); }
+.artist2CardsPack > .card7 { background-image: url("images/artist2tattoos/card7.jpg"); }
+.artist2CardsPack > .card8 { background-image: url("images/artist2tattoos/card8.jpg"); }
+.artist2CardsPack > .card9 { background-image: url("images/artist2tattoos/card9.jpg"); }
+.artist2CardsPack > .card10 { background-image: url("images/artist2tattoos/card10.jpg"); }
+
+/* Artist 3 Portofolio */
+.artist3CardsPack > .card1 { background-image: url("images/artist3tattoos/card1.jpg"); }
+.artist3CardsPack > .card2 { background-image: url("images/artist3tattoos/card2.jpg"); }
+.artist3CardsPack > .card3 { background-image: url("images/artist3tattoos/card3.jpg"); }
+.artist3CardsPack > .card4 { background-image: url("images/artist3tattoos/card4.jpg"); }
+.artist3CardsPack > .card5 { background-image: url("images/artist3tattoos/card5.jpg"); }
+.artist3CardsPack > .card6 { background-image: url("images/artist3tattoos/card6.jpg"); }
+.artist3CardsPack > .card7 { background-image: url("images/artist3tattoos/card7.jpg"); }
+.artist3CardsPack > .card8 { background-image: url("images/artist3tattoos/card8.jpg"); }
+.artist3CardsPack > .card9 { background-image: url("images/artist3tattoos/card9.jpg"); }
+.artist3CardsPack > .card10 { background-image: url("images/artist3tattoos/card10.jpg"); }
+
+/* Artist 4 Portofolio */
+.artist4CardsPack > .card1 { background-image: url("images/artist4tattoos/card1.jpg"); }
+.artist4CardsPack > .card2 { background-image: url("images/artist4tattoos/card2.jpg"); }
+.artist4CardsPack > .card3 { background-image: url("images/artist4tattoos/card3.jpg"); }
+.artist4CardsPack > .card4 { background-image: url("images/artist4tattoos/card4.jpg"); }
+.artist4CardsPack > .card5 { background-image: url("images/artist4tattoos/card5.jpg"); }
+.artist4CardsPack > .card6 { background-image: url("images/artist4tattoos/card6.jpg"); }
+.artist4CardsPack > .card7 { background-image: url("images/artist4tattoos/card7.jpg"); }
+.artist4CardsPack > .card8 { background-image: url("images/artist4tattoos/card8.jpg"); }
+.artist4CardsPack > .card9 { background-image: url("images/artist4tattoos/card9.jpg"); }
+.artist4CardsPack > .card10 { background-image: url("images/artist4tattoos/card10.jpg"); }
+
+/* Artist 5 Portofolio */
+.artist5CardsPack > .card1 { background-image: url("images/artist5tattoos/card1.jpg"); }
+.artist5CardsPack > .card2 { background-image: url("images/artist5tattoos/card2.jpg"); }
+.artist5CardsPack > .card3 { background-image: url("images/artist5tattoos/card3.jpg"); }
+.artist5CardsPack > .card4 { background-image: url("images/artist5tattoos/card4.jpg"); }
+.artist5CardsPack > .card5 { background-image: url("images/artist5tattoos/card5.jpg"); }
+.artist5CardsPack > .card6 { background-image: url("images/artist5tattoos/card6.jpg"); }
+.artist5CardsPack > .card7 { background-image: url("images/artist5tattoos/card7.jpg"); }
+.artist5CardsPack > .card8 { background-image: url("images/artist5tattoos/card8.jpg"); }
+.artist5CardsPack > .card9 { background-image: url("images/artist5tattoos/card9.jpg"); }
+.artist5CardsPack > .card10 { background-image: url("images/artist5tattoos/card10.jpg"); }
+
+/* Artist 6 Portofolio */
+.artist6CardsPack > .card1 { background-image: url("images/artist6tattoos/card1.jpg"); }
+.artist6CardsPack > .card2 { background-image: url("images/artist6tattoos/card2.jpg"); }
+.artist6CardsPack > .card3 { background-image: url("images/artist6tattoos/card3.jpg"); }
+.artist6CardsPack > .card4 { background-image: url("images/artist6tattoos/card4.jpg"); }
+.artist6CardsPack > .card5 { background-image: url("images/artist6tattoos/card5.jpg"); }
+.artist6CardsPack > .card6 { background-image: url("images/artist6tattoos/card6.jpg"); }
+.artist6CardsPack > .card7 { background-image: url("images/artist6tattoos/card7.jpg"); }
+.artist6CardsPack > .card8 { background-image: url("images/artist6tattoos/card8.jpg"); }
+.artist6CardsPack > .card9 { background-image: url("images/artist6tattoos/card9.jpg"); }
+.artist6CardsPack > .card10 { background-image: url("images/artist6tattoos/card10.jpg"); }
 
 
 

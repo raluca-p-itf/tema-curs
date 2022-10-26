@@ -1,3 +1,21 @@
+// Preloader : fading and then disappearing
+
+let loader = document.getElementById('preloader');
+
+// function type:  const functionName = () => {};
+const disappearingPreloader = () => {
+  setTimeout(() => {
+    loader.style.opacity = 0;
+    setTimeout(() => {
+        loader.style.display = 'none';
+    }, 1000);
+  }, 1000);
+}
+
+window.addEventListener("load", disappearingPreloader);
+
+
+
 // Tattoo Shop location on map
 
 let map = L.map('map').setView([50.063956, 19.9313673], 14);

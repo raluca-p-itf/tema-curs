@@ -205,7 +205,7 @@ a, a:hover, a:visited {
 }
 
 .sketchImage {
-    background-image: url("images/aboutTattooOne.jpg");
+    background-image: url("images/aboutSection/aboutTattooOne.jpg");
     height: 333px;
     width: 510;
     background-position: center;
@@ -215,7 +215,7 @@ a, a:hover, a:visited {
 }
 
 .tattooShopImage {
-    background-image: url("images/aboutTattooTwo.jpg");
+    background-image: url("images/aboutSection/aboutTattooTwo.jpg");
     height: 400px;
     width: 100%;
     background-position: center;
@@ -264,27 +264,27 @@ a, a:hover, a:visited {
 }
 
 #artist1 {
-    background-image: url('images/John.png');
+    background-image: url('images/artistsFacePicture/John.png');
 }
 
 #artist2 {
-    background-image: url('images/Jakub.png');
+    background-image: url('images/artistsFacePicture/Jakub.png');
 }
 
 #artist3 {
-    background-image: url('images/Hanna.png');
+    background-image: url('images/artistsFacePicture/Hanna.png');
 }
 
 #artist4 {
-    background-image: url('images/Zofia.png');
+    background-image: url('images/artistsFacePicture/Zofia.png');
 }
 
 #artist5 {
-    background-image: url('images/Mikołaj.png');
+    background-image: url('images/artistsFacePicture/Mikołaj.png');
 }
 
 #artist6 {
-    background-image: url('images/Julia.png');
+    background-image: url('images/artistsFacePicture/Julia.png');
 }
 
 .artistName {
@@ -548,17 +548,17 @@ footer {
 }
 
 .phoneIcon {
-    background-image: url("images/phone.svg");
+    background-image: url("images/footerIcons/phone.svg");
 }
 
 .mailIcon {
-    background-image: url("images/mail.svg");
+    background-image: url("images/footerIcons/mail.svg");
 }
 
 .homeIcon {
-    background-image: url("images/home.svg");
+    background-image: url("images/footerIcons/home.svg");
 }
 
 .clockIcon {
-    background-image: url("images/clock.svg");
+    background-image: url("images/footerIcons/clock.svg");
 }

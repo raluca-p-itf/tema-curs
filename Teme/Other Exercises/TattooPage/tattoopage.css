@@ -8,13 +8,14 @@ body {
 
 #preloader {
     background: black url("images/logoBig.png");
-    height: 100vh;
+    background-size: 35%;
+    height: 100%;
     width: 100%;
     position: fixed;
     z-index: 100;
     background-position: center;
     background-repeat: no-repeat;
-    transition:all 1s
+    transition:all 1s;
 }
 
 /* Space between sections */

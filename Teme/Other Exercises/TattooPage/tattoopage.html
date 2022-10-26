@@ -336,12 +336,13 @@
                     <div class="contactDescription">
                         We will select a specialist for you and provide a free consultation
                     </div>
-                    <input type="text" placeholder="Name" class="inputSpace">
-                    <input type="text" placeholder="Phone" class="inputSpace">
-                    <input type="text" placeholder="Email" class="inputSpace">
-                    <a href="smth.asp" class="sendRequestButton">
-                        <span class="sendRequest">SEND REQUEST</span>
-                    </a>
+                    <form action="https://formsubmit.co/ralucapurice05@gmail.com" method="POST" id="contactForm">
+                        <input type="text" placeholder="Name" required class="inputSpace">
+                        <input type="text" placeholder="Phone" required class="inputSpace">
+                        <input type="text" placeholder="Email" required class="inputSpace">
+                        <textarea placeholder="Describe the design" required class="inputSpace designDescription"></textarea>
+                        <button type="submit" form="contactForm" value="Submit" class="submitButton"> SEND REQUEST </button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -404,7 +405,6 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
         <script defer src="tattoopage.js"></script>
-        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADC8p3efY03U0iwOsYCrhjrD979oQ-OQc&callback=initMap&v=weekly" defer></script> -->
 
     </body>
 

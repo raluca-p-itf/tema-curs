@@ -462,30 +462,50 @@ a, a:hover, a:visited {
     border-radius: 45px;
     padding: 23px;
     color: white;
+    outline: none;
 }
 
 .inputSpace::placeholder {
     color: #C4C4C4;
 }
 
-.sendRequestButton {
-    background: #FFFFFF;
-    border-radius: 100px;
-    display: inline-block;
-    padding-top: 8px;
-    text-align: center;
-    height: 43px;
-    width: 376px;
+.designDescription {
+    height: 120px;
+    border-radius: 30px;
+    resize: none;
+    padding-top: 10px;
 }
 
-.sendRequest {
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 0.21em;
-    background-image: linear-gradient(to bottom right, #DF33EE 17.41%, #F4980D 34.84%, rgba(6, 232, 55, 0.961246) 65.16%, rgba(6, 244, 217, 0.961246) 81.83%);    
+textarea::-webkit-scrollbar {
+    /* Removing the scrollbar but keeping the functionality */
+    display: none;
+}
+
+.submitButton {
+    /* White button with gradient text */
+    height: 43px;
+    width: 376px;
+    border: none;
+    background-image: linear-gradient(to bottom right, #DF33EE 30.41%, #F4980D 39.84%, rgba(6, 232, 55, 0.961246) 59.16%, rgba(6, 244, 217, 0.961246) 60.83%);    
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.21em;
+}
+
+.submitButton:after {
+    /* White button with gradient text */
+    position: absolute;
+    content: ' ';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    border-radius: 45px;
 }
 
 .placeholdersAndButton {

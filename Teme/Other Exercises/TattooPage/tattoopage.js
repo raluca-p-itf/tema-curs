@@ -1,19 +1,14 @@
-let map;
+// Tattoo Shop location on map
 
-function initMap() {
-    const myLatLng = { lat: 50.0638488, lng: 19.9314677 };
-    map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 50.0638488, lng: 19.9314677 },
-        zoom: 14,
-    });
-    new google.maps.Marker({
-        position: myLatLng,
-        map,
-        title: "Inkphoric",
-      });
-}
+let map = L.map('map').setView([50.063956, 19.9313673], 14);
 
-window.initMap = initMap;
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
+let marker = L.marker([50.063956, 19.9313673]).addTo(map);
+
 
 
 // Swiper for the presentation page
@@ -41,6 +36,7 @@ const swiperPresentation = new Swiper('.swiperPresentation', {
       el: '.swiper-scrollbar',
     },
 });
+
 
 
 // Swiper for the portofolios

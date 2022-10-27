@@ -67,4 +67,26 @@
     /* -------------- */
 
 
+    [class*="servicesIcon"] {
+        width: 40px;
+        height: 40px;
+        margin: 0px;
+    }
+
+    [class*="iconHolder"] {
+        text-align: center;
+    }
+
+    [class*="serviceName"] {
+        text-align: center;
+    }
+
+    [class*="serviceDescription"] {
+        text-align: center;
+    }
+
+    [class*="service"] {
+        padding-right: 0px;
+    }
+
 }

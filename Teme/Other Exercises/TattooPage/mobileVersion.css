@@ -1,12 +1,15 @@
 @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
+
+
+    .padding-row-y {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
 
 
-    [class*="swiperPresentation"] {
+
+    .swiperPresentation {
         width: 50%;
         max-width: 400px;
         height: 300px;
@@ -14,79 +17,155 @@
 
 /* -------------- */
 
-    [class*="tattooShopName"] {
+    .tattooShopName {
         padding-right: 0px;
     }
 
-    [class*="descriptionOne"] {
+    .descriptionOne {
         padding-right: 0px;
     }
 
-    [class*="descriptionTwo"] {
+    .descriptionTwo {
         padding-right: 0px;
     }
+
 
 /* -------------- */
 
-    [class*="aboutDescription"] {
+    .aboutDescription {
         padding-right: 0px;
     }
 
-    [class*="aboutThirdParagraph"] {
+    .aboutThirdParagraph {
         padding-bottom: 25px;
     }
 
-    [class*="sketchImage"] {
+    .sketchImage {
         height: 170px;
         width: 100%;    
     }
 
-    [class*="tattooShopImage"] {
-        height: 112px;
+    .tattooShopImage {
+        height: 122px;
         width: 100%;    
-        margin-top: 25px;
+        margin-top: 30px;
+    }
+
+    .aboutSecondParagraph {
+        padding-top: 30px;
+    }
+
+    .aboutThirdParagraph {
+        padding-bottom: 30px;
     }
 
 
     /* -------------- */
 
-    [class*="artistName"] {
+    .artistName {
         margin-bottom: 20px;
     }
 
-    [class*="spirals"] {
+    .spirals {
         margin-bottom: 20px;
     }
 
-    [class*="artistPortofolio"] {
+    .artistPortofolio {
         width: 90%;
         max-width: 400px;
         height: 400px;
+        margin-bottom: 60px;
+    }
+
+    .lastPortofolio {
+        margin-bottom: 0px;
     }
 
     /* -------------- */
 
 
-    [class*="servicesIcon"] {
+    .servicesIcon {
         width: 40px;
         height: 40px;
-        margin: 0px;
+        margin-bottom: 30px;
+        margin-right: 0px;
     }
 
-    [class*="iconHolder"] {
+    .iconHolder {
         text-align: center;
     }
 
-    [class*="serviceName"] {
+    .serviceName {
         text-align: center;
+        margin-bottom: 30px;
+
     }
 
-    [class*="serviceDescription"] {
+    .serviceDescription {
         text-align: center;
+        margin-bottom: 0px;
     }
 
-    [class*="service"] {
+    .service {
         padding-right: 0px;
     }
 
+    .tattooing, .tattooingDesign, .coverUp {
+        margin-bottom: 60px;
+    }
+
+
+
+    /* -------------- */
+
+    .contactTitle {
+        margin-bottom: 60px;
+    }
+
+    .contactDescription {
+        margin-bottom: 30px;
+    }
+
+    .inputSpace {
+        margin-bottom: 30px;
+        width: 90%;
+    }
+
+    .submitButton {
+        width: 90%;
+    }
+
+
+
+
+
+
+    .allSections {
+        margin-bottom: 80px;
+    }
+
+
+
+
+    .footerDetails {
+        padding-top: 30px;
+        padding-top: 30px;
+    }
+
+
+    .detailsList > li {
+        margin-bottom: 30px;
+    }
+
+    .socialMedia > li {
+        margin-bottom: 30px;
+    }
+
+    #map {
+        margin-bottom: 40px;
+    }
+
+
+
 }
+

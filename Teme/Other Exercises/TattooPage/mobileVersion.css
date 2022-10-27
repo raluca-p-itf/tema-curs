@@ -12,11 +12,6 @@
         height: 300px;
     }
 
-    [class*="artistPortofolio"] {
-        width: 100%;
-        max-width: 400px;
-    }
-
 /* -------------- */
 
     [class*="tattooShopName"] {
@@ -55,8 +50,21 @@
 
     /* -------------- */
 
+    [class*="artistName"] {
+        margin-bottom: 20px;
+    }
 
+    [class*="spirals"] {
+        margin-bottom: 20px;
+    }
 
+    [class*="artistPortofolio"] {
+        width: 90%;
+        max-width: 400px;
+        height: 400px;
+    }
+
+    /* -------------- */
 
 
 }

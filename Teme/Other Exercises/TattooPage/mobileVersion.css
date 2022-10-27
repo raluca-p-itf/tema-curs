@@ -1,13 +1,27 @@
 @media only screen and (max-width: 768px) {
 
+    /* ---------- GENERAL ---------- */
 
     .padding-row-y {
         padding-top: 50px;
         padding-bottom: 50px;
     }
 
+    .allSections {
+        margin-bottom: 80px;
+    }
 
 
+
+    /* ----------  HEADER - LOGO & MENU ---------- */
+
+
+
+    /* ----------  SECTION 1 - Presentation section  ---------- */
+
+    .tattooShopName, .descriptionOne, .descriptionTwo {
+        padding-right: 0px;
+    }
 
     .swiperPresentation {
         width: 50%;
@@ -15,29 +29,20 @@
         height: 300px;
     }
 
-/* -------------- */
-
-    .tattooShopName {
-        padding-right: 0px;
-    }
-
-    .descriptionOne {
-        padding-right: 0px;
-    }
-
-    .descriptionTwo {
-        padding-right: 0px;
-    }
 
 
-/* -------------- */
+    /* ----------  SECTION 2 - About section  ---------- */
 
     .aboutDescription {
         padding-right: 0px;
     }
 
+    .aboutSecondParagraph {
+        padding-top: 30px;
+    }
+
     .aboutThirdParagraph {
-        padding-bottom: 25px;
+        padding-bottom: 30px;
     }
 
     .sketchImage {
@@ -51,22 +56,11 @@
         margin-top: 30px;
     }
 
-    .aboutSecondParagraph {
-        padding-top: 30px;
-    }
-
-    .aboutThirdParagraph {
-        padding-bottom: 30px;
-    }
 
 
-    /* -------------- */
+    /* ----------  SECTION 3 - Artists section  ---------- */
 
-    .artistName {
-        margin-bottom: 20px;
-    }
-
-    .spirals {
+    .artistName, .spirals {
         margin-bottom: 20px;
     }
 
@@ -81,8 +75,9 @@
         margin-bottom: 0px;
     }
 
-    /* -------------- */
 
+
+    /* ----------  SECTION 4 - Services section  ---------- */
 
     .servicesIcon {
         width: 40px;
@@ -91,14 +86,12 @@
         margin-right: 0px;
     }
 
-    .iconHolder {
+    .iconHolder, .serviceName {
         text-align: center;
     }
 
     .serviceName {
-        text-align: center;
         margin-bottom: 30px;
-
     }
 
     .serviceDescription {
@@ -116,56 +109,53 @@
 
 
 
-    /* -------------- */
+    /* ----------  SECTION 5 - Contact section  ---------- */
 
     .contactTitle {
         margin-bottom: 60px;
     }
 
-    .contactDescription {
+    .contactDescription, .inputSpace {
         margin-bottom: 30px;
     }
 
-    .inputSpace {
-        margin-bottom: 30px;
-        width: 90%;
-    }
-
-    .submitButton {
+    .inputSpace, .submitButton {
         width: 90%;
     }
 
 
 
-
-
-
-    .allSections {
-        margin-bottom: 80px;
-    }
-
-
-
+    /* ----------  FOOTER  ---------- */
 
     .footerDetails {
         padding-top: 30px;
         padding-top: 30px;
     }
 
-
     .detailsList > li {
         margin-bottom: 30px;
     }
 
     .socialMedia > li {
-        margin-bottom: 30px;
+        margin-right: 20px;
+        margin-left: 20px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .socialMedia {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .socialMedia > li:first-of-type {
+        display: block;
+        width: 100%; 
     }
 
     #map {
         margin-bottom: 40px;
     }
 
-
-
 }
-

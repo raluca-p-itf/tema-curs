@@ -1,0 +1,43 @@
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+
+
+    [class*="tattooShopName"] {
+        padding-right: 0px;
+    }
+
+    [class*="descriptionOne"] {
+        padding-right: 0px;
+    }
+
+    [class*="descriptionTwo"] {
+        padding-right: 0px;
+    }
+
+/* -------------- */
+
+    [class*="aboutDescription"] {
+        padding-right: 0px;
+    }
+
+    [class*="aboutThirdParagraph"] {
+        padding-bottom: 25px;
+    }
+
+    [class*="sketchImage"] {
+        height: 170px;
+        width: 100%;    
+    }
+
+    [class*="tattooShopImage"] {
+        height: 112px;
+        width: 100%;    
+        margin-top: 25px;
+    }
+
+
+}

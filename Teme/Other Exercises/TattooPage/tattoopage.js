@@ -3,16 +3,16 @@
 let loader = document.getElementById('preloader');
 
 // function type:  const functionName = () => {};
-const disappearingPreloader = () => {
-  setTimeout(() => {
-    loader.style.opacity = 0;
-    setTimeout(() => {
-        loader.style.display = 'none';
-    }, 1000);
-  }, 1000);
-}
+// const disappearingPreloader = () => {
+//   setTimeout(() => {
+//     loader.style.opacity = 0;
+//     setTimeout(() => {
+//         loader.style.display = 'none';
+//     }, 1000);
+//   }, 1000);
+// }
 
-window.addEventListener("load", disappearingPreloader);
+// window.addEventListener("load", disappearingPreloader);
 
 
 

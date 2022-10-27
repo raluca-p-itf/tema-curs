@@ -6,6 +6,19 @@
 
 
 
+    [class*="swiperPresentation"] {
+        width: 50%;
+        max-width: 400px;
+        height: 300px;
+    }
+
+    [class*="artistPortofolio"] {
+        width: 100%;
+        max-width: 400px;
+    }
+
+/* -------------- */
+
     [class*="tattooShopName"] {
         padding-right: 0px;
     }
@@ -38,6 +51,12 @@
         width: 100%;    
         margin-top: 25px;
     }
+
+
+    /* -------------- */
+
+
+
 
 
 }

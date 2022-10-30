@@ -15,6 +15,60 @@
 
     /* ----------  HEADER - LOGO & MENU ---------- */
 
+    .logoAndMenu {
+        display: none;
+    }
+
+    .mobileLogo {
+        width: 130px;
+    }
+        
+    .topnav {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        -webkit-tap-highlight-color: transparent;
+        padding: 4% 2% 0 2%;
+    }
+    
+    .topnav #myLinks {
+        display: none;
+        background-color: rgb(11, 37, 28);
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        text-align: center;
+    }
+    
+    .topnav a {
+        color: white;
+        font-family: 'Raleway';
+        letter-spacing: 0.21em;
+        font-size: 18px;
+        font-weight: 600;    
+        text-decoration: none;
+        display: block;
+    }
+
+    #myLinks a {
+        margin-top: 50px;
+    }
+    
+      /* Style the hamburger menu */
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 6% 4%;
+    
+    }
+    
+    .topnav a:hover {
+        /* color: white; */
+    }
+
 
 
     /* ----------  SECTION 1 - Presentation section  ---------- */

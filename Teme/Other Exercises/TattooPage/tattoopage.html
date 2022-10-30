@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet">        
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin=""/>
         <link rel="stylesheet" href="tattoopage.css">
         <link rel="stylesheet" href="mobileVersion.css">
@@ -37,6 +38,24 @@
                 </div>
             </div>
         </header>
+
+        <!-- HEADER - Logo & Menu - MOBILE VERSION -->
+        <div class="topnav">
+            <a href="#home" class="active">
+                <img src = "images/logoBig.png" alt="Inkphoric logo" class="mobileLogo"/>
+            </a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="#aboutSection">about</a>
+                <a href="#artistsSection">artists</a>
+                <a href="#servicesSection">services</a>
+                <a href="#contactSection">contact</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
 
         <!-- SECTION 1 - Presentation section -->
         <div class="container allSections">

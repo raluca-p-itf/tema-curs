@@ -112,6 +112,10 @@ a, a:hover, a:visited {
     color: white;
 }
 
+.topnav {
+    display: none;
+}
+
 
 
 /* ----------  SECTION 1 - Presentation section  ---------- */

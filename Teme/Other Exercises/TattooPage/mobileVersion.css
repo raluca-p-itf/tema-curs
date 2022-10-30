@@ -28,7 +28,6 @@
         overflow: hidden;
         position: relative;
         -webkit-tap-highlight-color: transparent;
-        /* padding-top: 4%; */
     }
 
     .logoMenu {
@@ -37,7 +36,7 @@
     
     .topnav #myLinks {
         display: none;
-        background-color: rgb(10, 56, 40);
+        background-color: black;
         height: 100%;
         width: 100%;
         z-index: 100;
@@ -56,26 +55,19 @@
     }
 
     #myLinks a {
-        margin-top: 50px;
+        margin-bottom: 50px;
     }
     
-      /* Style the hamburger menu */
     .topnav a.icon {
-        background: black;
         display: block;
-        /* position: absolute; */
         right: 0;
         top: 0;
-        /* padding-top: 6% 4%; */
-
-        position: static;
-
-    }
-    
-    .topnav a:hover {
-        /* color: white; */
     }
 
+    .xIcon {
+        text-align: end;
+        padding-top: 6%;
+    }
 
 
 

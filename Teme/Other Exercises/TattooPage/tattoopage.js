@@ -70,11 +70,11 @@ const swiper = new Swiper('.artistPortofolio', {
 
 // Mobile Menu
 
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+function showOrHideMenu() {
+  let closeAndNavLinks = document.getElementById("closeAndNavLinks");
+  if (closeAndNavLinks.style.display === "block") {
+    closeAndNavLinks.style.display = "none";
   } else {
-    x.style.display = "block";
+    closeAndNavLinks.style.display = "block";
   }
-}
+};

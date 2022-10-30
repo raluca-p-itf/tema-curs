@@ -23,7 +23,7 @@
         width: 130px;
     }
         
-    .topnav {
+    .mobileLogoAndMenu {
         display: block;
         overflow: hidden;
         position: relative;
@@ -34,7 +34,7 @@
         padding-top: 4%;
     }
     
-    .topnav #myLinks {
+    .mobileLogoAndMenu #closeAndNavLinks {
         display: none;
         background-color: black;
         height: 100%;
@@ -44,7 +44,7 @@
         text-align: center;
     }
     
-    .topnav a {
+    .mobileLogoAndMenu a {
         color: white;
         font-family: 'Raleway';
         letter-spacing: 0.21em;
@@ -54,19 +54,20 @@
         display: block;
     }
 
-    #myLinks a {
+    #closeAndNavLinks a {
         margin-bottom: 50px;
     }
+
+    #closeAndNavLinks a:first-of-type {
+        margin-bottom: 40%;
+        text-align: end;
+        padding-top: 6%;
+    }
     
-    .topnav a.icon {
+    .mobileLogoAndMenu a.icon {
         display: block;
         right: 0;
         top: 0;
-    }
-
-    .xIcon {
-        text-align: end;
-        padding-top: 6%;
     }
 
 

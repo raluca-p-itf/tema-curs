@@ -41,7 +41,7 @@
         </header>
 
         <!-- HEADER - Logo & Menu - MOBILE VERSION -->
-        <div class="container topnav">
+        <div class="container mobileLogoAndMenu">
             <div class="row justify-content-between">
                 <div class="col-5 logoMenu">
                     <a href="#home" class="active">
@@ -49,18 +49,18 @@
                     </a>
                 </div>
                 <!-- Navigation links (hidden by default) -->
-                <div id="myLinks" class="col align-items-center">
-                    <a href="javascript:void(0);" class="xIcon" onclick="myFunction()">
+                <div id="closeAndNavLinks" class="col align-items-center">
+                    <a href="javascript:void(0);" onclick="showOrHideMenu()">
                         <i class="fa-solid fa-xmark"></i>                    
                     </a>
-                    <a href="#aboutSection">about</a>
-                    <a href="#artistsSection">artists</a>
-                    <a href="#servicesSection">services</a>
-                    <a href="#contactSection">contact</a>
+                    <a href="#aboutSection" onclick="showOrHideMenu()">about</a>
+                    <a href="#artistsSection" onclick="showOrHideMenu()">artists</a>
+                    <a href="#servicesSection" onclick="showOrHideMenu()">services</a>
+                    <a href="#contactSection" onclick="showOrHideMenu()">contact</a>
                 </div>
                 <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
                 <div class="col-2 d-flex align-items-center justify-content-end logoMenu">
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <a href="javascript:void(0);" onclick="showOrHideMenu()">
                         <i class="fa-solid fa-bars"></i>
                     </a>
                 </div>
